@@ -8,6 +8,31 @@ use Firebase\JWT\JWT;
 
 import('Vendor.mail');
 class IndexController extends Controller {
+    
+    public function xlstest(){
+
+        $fname=array("Bill","Steve","Mark");
+        $age=array("60","56","31");
+        
+        $c=array_combine($fname,$age);
+        print_r($c);
+        //Array ( [Bill] => 60 [Steve] => 56 [Mark] => 31 )
+        die;
+      /*   $colors = array("red","green","blue","yellow");
+        foreach ($colors as $value) {
+            echo "$value <br>";
+        }
+        print_r($value);
+        die; */
+        $m = M('user');
+        $fieldarr = $m->query("describe __PREFIX__user");
+        foreach($fieldarr as $v){
+            $field[] = $v['Field'];
+        }
+        
+        print_r($field);
+    }
+    
     public function sendmail(){
     
         
