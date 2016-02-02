@@ -32,7 +32,7 @@ class VotelistController extends Controller {
         $sqlofdate="select * from __PREFIX__view_vote where endtime > $time and begtime <$time".$sqlplus;//注意此处需要将时间设置Y-m-d        
         $sqlofuid="select * from  __PREFIX__view_vote where name=\"$uid\"".$sqlplus;//此处的uid都是中文的utf-8(编辑和管理员的名字互相都不能一样)
         $sqloftid="select * from  __PREFIX__view_vote where type=\"$tid\"".$sqlplus;//此处的tid都是中文的utf-8(种类的名字互相也都不能一样)
-        $sqlofgrade="select * from __PREFIX__view_vote where grade=like \"$grade\"".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样)
+        $sqlofgrade="select * from __PREFIX__view_vote where grade like \"$grade\"".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样)
         $sql="select * from __PREFIX__view_vote".$sqlplus;
         //phyman_view_vote 是vote的视图，包含voteid，标题title，begtime,endtime,创建者名字，属于哪个种类（中文）信息
         
@@ -70,6 +70,8 @@ class VotelistController extends Controller {
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
          */
+        
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         echo $jwt;
 

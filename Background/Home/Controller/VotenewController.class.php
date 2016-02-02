@@ -4,7 +4,7 @@ use Think\Controller;
 use Think\Model;
 require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
-class ArticlenewController extends Controller {
+class VotenewController extends Controller {
     public function index(){
         //获取来自客户端的jwt
         $postjwt=$_POST;
@@ -33,11 +33,7 @@ class ArticlenewController extends Controller {
         //对投票选项进行处理
         $contents=explode(";",$decoded->options);//此处为投票具体内容
         $count=count($contents)-1;//总共有多少个投票内容
-        for($i=0;$i<$count;$i++){
-            $ids=$datetime.$i.";";
-        }
-        $optionids=explode(";",$ids);
-
+        
         //将读取到的html文件写入到硬盘文件
         $file_path=__DIRART__.$datetime.$uid.'vote.html';
         $body=$datetime.$uid.'vote.html';//html文件的名字
@@ -51,29 +47,30 @@ class ArticlenewController extends Controller {
         
         //投票信息里加入字段
         $Model=new Model();
+        
+
+        //从数据库中获取一个整数型的uuid，并设置为文章的ID号
+        $sql="select uuid_short();";
+        $id=$Model->query($sql);
+        
         /* $sql="insert into __PREFIX__vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
            uuid_short(),'$title',$body,'$datesql','$enddatesql',$uid','$tid','$body','$grade')";
          *///
         $sql="insert into __PREFIX__vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
-        uuid_short(),'$title',$body,'$datesql','$enddatesql',$uid','$tid','$bodyofhtml','$grade')";
+        $id,'$title','$body','$datesql','$enddatesql',$uid,$tid,'$bodyofhtml','$grade')";
         
-        if($Model->query($sql))
+        if($Model->execute($sql))
             $suc=1;
         else 
             $suc=0;
         
-   /*      //投票选项里加入字段
+        //投票选项里加入字段
         if($suc){
-            for($i=0;$i<$count;){
-                $sql="insert into __PREFIX__vote_options(id,tid,content) values ('$optionids[$i]','$datetime',$contents[$i])";
-                if($Model->query($sql))
-                    $i++;
-                else {
-                    $suc=0;
-                    break;//跳出for循环
-                }
+            for($i=1;$i<=$count;){
+                $sql="insert into __PREFIX__vote_options(id,tid,content) values ($i,$id,$contents[$i])";
+                $Model->query($sql);
             }
-        } */
+        }
               
         $token = array(
             
@@ -90,12 +87,35 @@ class ArticlenewController extends Controller {
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
         */
+        
+        
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         echo $jwt;
         
+        $this::insertuser($id);
        /*  $decoded = JWT::decode($jwt, $key, array('HS256'));//json
         print_r($decoded); */
         
     }
+    
+    public function insertuser($voteid){
+        $Model=new Model();
+    
+        $sql="create table __PREFIX__vote_user".$voteid."(uid bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null),option varchar(255)";
+        $Model->query($sql);
+    
+        $sql="select grade from __PREFIX__vote where id=".$voteid;
+        $res=$Model->query($sql);
+        $grade=explode(";",$res);
+        $count=count($grade)-1;
+    
+        for($i=0;$i<$count;$i++){
+            $sql="insert into __PREFIX__vote_user".$voteid.
+            "select uid,name,grade from __PREFIX__user where grade like\"%$grade%\"";
+            $Model->query($sql);
+        }
+    }
+    
 }
 ?>

@@ -42,12 +42,18 @@ class ArticlenewController extends Controller {
         else
             $suc=0;
         fclose($myfile);
-        //$suc=0保存成功；=1写入失败
+        //$suc=1保存成功；=0写入失败
         //从数据库中读取用户的password和权限
-        $sql="insert into __PREFIX__article(id,title,uid,date,tid,body,grade) 
-            values ('$id','$title','$uid','$datesql','$tid','$body','$grade')";
+        
         $Model=new Model();
-        if($Model->query($sql))
+        
+        //从数据库中获取一个整数型的uuid，并设置为文章的ID号
+        $sql="select uuid_short();";
+        $id=$Model->query($sql);
+        
+        $sql="insert into __PREFIX__article(id,title,uid,date,tid,body,grade) 
+            values ($id,'$title',$uid,'$datesql',$tid,'$body','$grade')";
+        if($Model->execute($sql))
             $suc=1;
         else 
             $suc=0;
@@ -57,9 +63,6 @@ class ArticlenewController extends Controller {
             "suc"=>$suc,
             "body"=>$body,
         );
-        
-        
-        
        // echo 'success';
         /**
          * IMPORTANT:
@@ -67,51 +70,34 @@ class ArticlenewController extends Controller {
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
         */
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         echo $jwt;
-        
+        //向数据库中增加表
+        $this::insertuser($id);
        /*  $decoded = JWT::decode($jwt, $key, array('HS256'));//json
         print_r($decoded); */
         
     }
+    public function insertuser($articleid){
+        $Model=new Model();
+        
+        $sql="create table __PREFIX__article_user".$articleid."(uid bigint(12),name varchar(10),grade varchar(10),check int(1) default 0 not null)";
+        $Model->query($sql);
+
+        $sql="select grade from __PREFIX__article where id=".$articleid;
+        $res=$Model->query($sql);
+        $grade=explode(";",$res);
+        $count=count($grade)-1;
+
+        for($i=0;$i<$count;$i++){
+            $sql="insert into __PREFIX__article_user".$articleid.
+            "select uid,name,grade from __PREFIX__user where grade like\"%$grade%\"";
+            $Model->query($sql);
+        }
+    }
 }
-/*
- //测试用数据
- // $decoded = JWT::decode($postjwt, $key, array('HS256'));
- //$arr=json_decode($decoded);
- //$username=$arr->username;//用户名为学号，也是数据库中的ID
- //$psw=$arr->password;//密码
- $key="access_token";
- $id=date("YmdHis",strtotime('now'));//;$arr->id;//文章ID号（为14位年月日时分秒）
- $title='物电学院打造“三位一体”的精英Phyman培养体系';//$arr->title;//文章标题
- $uid=201522040840;//$arr->username;//创建该文章的用户ID
- $date=date("Y-m-d H:i:s",strtotime('now'));//$arr->date;//创建文章的年月日时分秒
- $tid=1;//$arr->tid;//
 
- $file_path=__DIRART__.'testread.html';
- //  echo $file_path;
- //判断是否有这个文件
- if(file_exists($file_path)){
- if($fp=fopen($file_path,"a+")){
- //读取文件
- $conn=fread($fp,filesize($file_path));
- //   return $conn;
- //替换字符串
- //$conn=str_replace("rn","<br/>",$conn);
- //  echo $conn."<br/>";
- }else{
- echo "文件打不开";
- }
- }else{
- echo "没有这个文件";
- }
- fclose($fp);
-
- $bodyofhtml=$conn;//$arr->body;//文章的内容（保存为html）
- $grade=1;//$arr->grade;//可查看该文章的年级
-
-
- */
 ?>
 
 

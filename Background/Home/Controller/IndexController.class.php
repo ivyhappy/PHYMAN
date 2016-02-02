@@ -6,21 +6,92 @@ require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
 
 class IndexController extends Controller {
+    public function testurl(){
+        
+    }
+    public function insertuser($id){
+        echo "insertuser"."<br>";
+    }
+    
+    
     public function testoprions(){
         
-        
+        $key="123";
         $Model= new Model();
+        $voteid=1;
+        $sql="select count(*) from __PREFIX__vote_options where vid=".$voteid;
+        $res=$Model->query($sql);
+        $resultofvote=Array(
+            'sum'=>$res[0]['count(*)'],
+            'options'=>Array(
+                ),
+        );
+        for($i=1;$i<3;$i++){
+            $sql="select id,content from __PREFIX__vote_options where vid=".$voteid;
+            $res=$Model->query($sql);
+            $num=$temp[0]['count(*)'];
+            $s=Array(
+                'opt'=>$res[$i]['id'],
+                'conten'=>$res[$i]['content'],
+            );
+            array_push($resultofvote['options'],$s);
+            
+        }
+        $resss=json_encode($resultofvote);
+       print_r($resss);
+       
+       echo "<br>";
+       $token = array(
+       
+           'result'=>$resss,
+       );
+       
+       // echo 'success';
+       /**
+        * IMPORTANT:
+        * You must specify supported algorithms for your application. See
+        * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
+        * for a list of spec-compliant algorithms.
+       */
+       //$token=json_encode($token);
+       
+       
+       $token=json_encode($token);
+       $jwt = JWT::encode($token, $key);
+       echo $jwt;
+       //向数据库中增加表
+       $this::insertuser($id);
+
+       $decoded = JWT::decode($jwt, $key, array('HS256'));//json
+        print_r($decoded);
+       
+       
+       
+       
+       // echo $resultofvote['sum'];
+        die;
+        
    /*  $sql="select uuid_short() Length=15;";
     print_r($Model->query($sql)); */
-        $date=date("Ymd",strtotime('now'));
+    /*     $date=date("Ymd",strtotime('now'));
         echo $date;
         $datetime=date("Y-m-d H:i:s",strtotime($date));
-        echo $datetime;
+        echo $datetime; */
    // print_r($res); 
-/*         $sql="insert into __PREFIX__authority (id,name) values (uuid_short(),\"测试\")";
-        $Model->query($sql);
+   $sql="select uuid_short();";
+   $uuid=$Model->query($sql);
+//   print_r( $uuid);
+        $id=$uuid[0]['uuid_short()'];$title='wwwww';$uid=201522040840;$datesql='';$tid=1;$body='dddddd.html';$grade=1;
+        echo $id;
+        $sql="insert into __PREFIX__article(id,title,uid,date,tid,body,grade)
+        values ($id,'$title','$uid','$datesql','$tid','$body','$grade')";
+       // $sql='insert into __PREFIX__authority (id,name) values (uuid_short(),\'测试\')';
         
+       if($id=$Model->execute(($sql)))
+           echo '111';
+       else echo '33';
         
+      /*   
         $sql="select * from __PREFIX__authority LIMIT 1,10";
         $res=$Model->query($sql);
         print_r($res);
@@ -31,8 +102,8 @@ class IndexController extends Controller {
         for($i=0;$i<$count;$i++){
             $optionids=$optionids.$datetime.$i.";";
         }
-        echo $optionids; */
-        
+        echo $optionids;
+         */
         
         
         
@@ -168,14 +239,14 @@ class IndexController extends Controller {
              //   return $conn;
                 //替换字符串
                 $conn=str_replace("rn","<br/>",$conn);
-                echo $conn."<br/>";
+                $this->display($conn);
             }else{
                 echo "文件打不开";
             }
         }else{
             echo "没有这个文件";
         }
-        fclose($fp);
+       /*  fclose($fp);
         $file_path=__DIRART__.'testwrite1.html';
         $myfile = fopen($file_path, "w") or die("Unable to open file!");
      //   $txt = "Bill Gates\n";
@@ -184,7 +255,7 @@ class IndexController extends Controller {
         fwrite($myfile, $conn);
         fclose($myfile);
         echo 'success';
-        
+         */
        // $myfile = fopen("testfile.html", "w");
         
     }

@@ -1670,3 +1670,28 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002291s ]
 
+[ 2016-02-01T22:16:22+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017233s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 560 行.
+ERR: Think\Controller:displat方法不存在！
+
+[ 2016-02-01T22:16:41+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002995s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 560 行.
+ERR: 模板不存在:./Background/Home/View/<!doctype html>
+
+
+
+</html>
+.html
+

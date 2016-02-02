@@ -27,7 +27,6 @@ class LoginController extends Controller {
         //1：登录是否成功（0=成功，1=密码错误；2=该账号未注册;3=已注册）
         //2：权限（0=游客；1=管理员；2=编辑；3=用户）
         
-        $psw=md5(md5(md5($psw)));
         
         if($res==null)
             $log=2;
@@ -47,6 +46,9 @@ class LoginController extends Controller {
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
         */
+        
+        
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         
         echo $jwt;

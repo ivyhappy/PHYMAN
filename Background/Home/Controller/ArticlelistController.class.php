@@ -32,11 +32,11 @@ class ArticlelistController extends Controller {
         $sqloftitle="select * from __PREFIX__article where title like \"%$title%\" ".$sqlplus;
         $sqlofdate="select * from __PREFIX__article where date like \"%$date%\" ".$sqlplus;//注意此处需要将时间设置Y-m-d        
         $sqlofuid="select * from  __PREFIX__article where uid=(
-                   select id from __PREFIX__user where name=\"$uid\") ".$sqlplus;//此处的uid都是中文的utf-8(编辑和管理员的名字互相都不能一样)
+                   select id from __PREFIX__user where name= \"%$uid%\") ".$sqlplus;//此处的uid都是中文的utf-8(编辑和管理员的名字互相都不能一样)
         $sqloftid="select * from  __PREFIX__article where tid=(
-                   select id from __PREFIX__type where name=\"$tid\") ".$sqlplus;//此处的tid都是中文的utf-8(种类的名字互相也都不能一样)
+                   select id from __PREFIX__type where name= \"%$tid%\") ".$sqlplus;//此处的tid都是中文的utf-8(种类的名字互相也都不能一样)
         $sqlofgrade="select * from __PREFIX__article where grade=(
-                   select id from __PREFIX__grade where name=\"$grade\") ".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样)
+                   select id from __PREFIX__grade where name= \"%$grade%\") ".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样)
         $sql="select * from __PREFIX__article ".$sqlplus;
         
         //根据用户设置的条件筛选文章
@@ -71,6 +71,8 @@ class ArticlelistController extends Controller {
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
          */
+        
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         echo $jwt;
 

@@ -42,25 +42,43 @@ class  GetarticleController extends Controller {
         }
         fclose($fp); */
         
+        
+        if($article!=null)
+            $suc=1;
+        else $suc=0;
+        
         $token=array(
             
             
-            
+            'suc'=>$suc,
             'article'=>$article,
         );
        
+        
+        
+        
         /**
          * IMPORTANT:
          * You must specify supported algorithms for your application. See
          * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
          * for a list of spec-compliant algorithms.
          */
+        $token=json_encode($token);
         $jwt = JWT::encode($token, $key);
         echo $jwt;
-
+       
        /*  $decoded = JWT::decode($jwt, $key, array('HS256'));//json
         print_r($decoded); */
+        
+        $this::articlecheck($username,$article);
 
+    }
+    public function articlecheck($userid,$articleid){
+        $Model=new Model();
+        $check=1;
+        $sql="update __PREFIX__article_user".$articleid." set check=".$check." where uid=".$userid;
+        $Model->query($sql);
+        
     }
 }
 ?>
