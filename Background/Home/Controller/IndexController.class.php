@@ -5,7 +5,39 @@ use Think\Model;
 require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
 
+
+import('Vendor.mail');
 class IndexController extends Controller {
+    public function sendmail(){
+    
+        
+        $mailbox="linxiaoyi_j@163.com";
+        $mail="dd2dt";
+        //******************** 配置信息 ********************************
+        $smtpserver = "smtp.163.com";//SMTP服务器
+        $smtpserverport =25;//SMTP服务器端口
+        $smtpusermail = "linxiaoyi_j@163.com";//SMTP服务器的用户邮箱
+        $smtpemailto = $mailbox;//发送给谁
+        $smtpuser = "linxiaoyi_j";//SMTP服务器的用户帐号
+        $smtppass = "密码";//SMTP服务器的用户密码
+    
+        $mailtitle = "Change password";//邮件主题
+        $mailconten="您的phyman账号密码已成功修改为".$mail."请及时修改密码";//邮件内容
+        $mailtype = "TXT";//邮件格式（HTML/TXT）,TXT为文本邮件
+        //************************ 配置信息 ****************************
+        $smtp = new \smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
+        $smtp->debug = false;//是否显示发送的调试信息
+        $state = $smtp->sendmail($smtpemailto, $smtpusermail, $mailtitle, $mailconten, $mailtype);
+    
+        if($state==""){
+            echo "对不起，邮件发送失败！您还可以发送学号，姓名到管理员邮箱。";
+    
+        }else
+            echo "邮件发送成功，请查收，并尽快修改密码";
+    
+        return $log;
+    
+    }
     public function testurl(){
         
     }

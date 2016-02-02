@@ -1201,3 +1201,111 @@ SQL: select id,content from phyman_vote_options where vid=1 [ RunTime:0.000431s 
 NOTIC: [8] Undefined variable: temp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 32 行.
 NOTIC: [8] Undefined variable: id D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 61 行.
 
+[ 2016-02-02T19:26:02+08:00 ] ::1 /PHYMAN/index.php?a=sendmail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000292s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025376s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 661 行.
+
+[ 2016-02-02T19:26:35+08:00 ] ::1 /PHYMAN/index.php?a=sendmail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 663 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023140s ]
+
+[ 2016-02-02T19:26:36+08:00 ] ::1 /PHYMAN/index.php?a=sendmail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000386s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004157s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 663 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002679s ]
+
+[ 2016-02-02T19:27:33+08:00 ] ::1 /PHYMAN/index.php?a=sendmail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002514s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 663 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002787s ]
+
+[ 2016-02-02T19:28:00+08:00 ] ::1 /PHYMAN/index.php?a=sendmail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 663 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 424 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 440 行.
+NOTIC: [8192] Function ereg_replace() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 442 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8192] Function ereg() is deprecated D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\mail.class.php 第 338 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002751s ]
+
