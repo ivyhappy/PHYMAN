@@ -14,6 +14,9 @@ class IndexController extends Controller {
         $fname=array("Bill","Steve","Mark");
         $age=array("60","56","31");
         
+        print_r($fname);
+        print_r($age);
+        
         $c=array_combine($fname,$age);
         print_r($c);
         //Array ( [Bill] => 60 [Steve] => 56 [Mark] => 31 )
@@ -53,7 +56,6 @@ class IndexController extends Controller {
         $smtp = new \smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
         $smtp->debug = false;//是否显示发送的调试信息
         $state = $smtp->sendmail($smtpemailto, $smtpusermail, $mailtitle, $mailconten, $mailtype);
-    
         if($state==""){
             echo "对不起，邮件发送失败！您还可以发送学号，姓名到管理员邮箱。";
     
