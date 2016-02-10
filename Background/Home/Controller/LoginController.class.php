@@ -19,7 +19,7 @@ class LoginController extends Controller {
         
         //从数据库中读取用户的password和权限
         $Model=new Model();
-        $res=$Model->query("select psw,authority from __PREFIX__user where id=".$username);
+        $res=$Model->query("select psw,authority from ".__PREFIX__."user where id=".$username);
         $authority=$res[0]['authority'];
 
        

@@ -19,12 +19,12 @@ class  GetvoteController extends Controller {
         
         $Model=new Model();
         //判断用户是否已进行过投票
-        $sql="select choose from __PREFIX__vote_user".$vote." where uid=".$username;
+        $sql="select choose from ".__PREFIX__."vote_user".$vote." where uid=".$username;
         $res=$Model->query($sql);
         if($res[0]['choose']){
-            $optofhtml=$this::getvotebody($vote);
+            $optofhtml=$this::getvotebody($vote);//返回投票页面
         }else{
-            $optofhtml=$this::getvoteres($vote);
+            $optofhtml=$this::getvoteres($vote);//返回投票结果
         }        
         
         
@@ -84,7 +84,7 @@ class  GetvoteController extends Controller {
         $Model=new Model();
         $choose=0;
         //共有多少人投票
-        $sql="select count(*) from  __PREFIX__vote_user".$voteid." where choose!=".$choose;
+        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid." where choose=1";
         $res=$Model->query($sql);
     
         $resultofvote=Array(
@@ -107,7 +107,7 @@ class  GetvoteController extends Controller {
             $id=$res[$i]['id'];
             $content=$res[$i]['content'];
     
-            $sql="select count(*) from __PREFIX__vote_user".$voteid." where choose like \"%$id%\"";
+            $sql="select count(*) from __PREFIX__vote_user".$voteid." where options like \"%$id%\"";
             $temp=$Model->query($sql);
             $num=$temp[0]['count(*)'];
             $s=array(

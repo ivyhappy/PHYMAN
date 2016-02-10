@@ -16,21 +16,21 @@ class UservoteController extends Controller {
         $arr=json_decode($decoded);
         $username=$arr->username;//用户名为学号，也是数据库中的ID
         $voteid=$arr->id;//投票ID号（为14位年月日时分秒）
-        $choose=$arr->choose;
+        $option=$arr->option;//那几个选项按照;划分
 
         $Model=new Model();
-        $sql="update __PREFIX__uservote_user".$voteid."set choose=".$arr->choose."where uid=".$username;
+        $sql="update ".__PREFIX__."vote_user".$voteid."set option=".$option."where id=".$username;
         $Model->query($sql);
         
-        $cho=explode(";",$choose);
+       /*  $cho=explode(";",$option);
         $count=count($cho)-1;
         for($i=0;$i<$count;$i++){
-            $sql="select content from __PREFIX__vote_options where vid=".$voteid."and id=".$cho[$i];
+            $sql="select content from ".__PREFIX__."vote_options where vid=".$voteid."and id=".$cho[$i];
             $res=$Model->query($sql);
             $contents=$contents.$res[0]['content'].";";
-        }
+        } */
         
-        $sql="update  __PREFIX__vote_user".$voteid."set content=".$contents;
+        $sql="update  ".__PREFIX__."vote_user".$voteid."set choose=1 where id=".$username;;
         $Model->query($sql);
      
         
@@ -56,7 +56,7 @@ class UservoteController extends Controller {
         $jwt = JWT::encode($token, $key);
         echo $jwt;
         //向数据库中增加表
-        $this::insertuser($id);
+       // $this::insertuser($id);
        /*  $decoded = JWT::decode($jwt, $key, array('HS256'));//json
         print_r($decoded); */
         
@@ -66,7 +66,7 @@ class UservoteController extends Controller {
         $Model=new Model();
         $choose=0;
         //共有多少人投票
-        $sql="select count(*) from  __PREFIX__vote_user".$voteid." where choose!=".$choose;
+        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid." where choose!=".$choose;
         $res=$Model->query($sql);
         
         $resultofvote=Array(
@@ -76,12 +76,12 @@ class UservoteController extends Controller {
         );
          
         
-        //有这么多种选项
-        $sql="select count(*) from __PREFIX__vote_options where vid=".$voteid;
+        //有多少种选项
+        $sql="select count(*) from ".__PREFIX__."vote_options where vid=".$voteid;
         $res=$Model->query($sql);
         $count=$res[0]['count(*)'];
         
-        $sql="select id,content from __PREFIX__vote_options where vid=".$voteid;
+        $sql="select id,content from ".__PREFIX__."vote_options where vid=".$voteid;
         $res=$Model->query($sql);
         
         
@@ -90,7 +90,7 @@ class UservoteController extends Controller {
             $id=$res[$i]['id'];
             $content=$res[$i]['content'];
         
-            $sql="select count(*) from __PREFIX__vote_user".$voteid." where choose like \"%$id%\"";
+            $sql="select count(*) from ".__PREFIX__."vote_user".$voteid." where option like \"%$id%\"";
             $temp=$Model->query($sql);
             $num=$temp[0]['count(*)'];
             $s=array(

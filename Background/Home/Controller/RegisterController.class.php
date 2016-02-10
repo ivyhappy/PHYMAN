@@ -33,9 +33,9 @@ class LoginController extends Controller {
         
         //从数据库中读取想要注册的用户ID，若未注册，则向数据库中插入数据
         //若已经注册，则返回权限为authority=0为游客；登陆状态log=3为已注册；
-        $res=$Model->query("select * from __PREFIX__user where id=".username);
+        $res=$Model->query("select * from ".__PREFIX__."user where id=".username);
         if($res==null){
-            $sql="insert into __PREFIX__user(id,name,sex,psw,authority,img,grade,mailbox) values (
+            $sql="insert into ".__PREFIX__."user(id,name,sex,psw,authority,img,grade,mailbox) values (
                 $id,'$name','$sex','$psw',$authority,'$img',$grade,'$mailbox'";
             $Model->query($sql);
             $log=0;

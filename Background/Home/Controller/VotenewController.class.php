@@ -6,6 +6,15 @@ require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
 class VotenewController extends Controller {
     public function index(){
+        
+        $id=1;
+        $this::insertuser($id);
+        die;
+     /*   // $sql="create table "."".__PREFIX__."vote_user".$id." (id bigint(12) ,name varchar(10),grade varchar(10),choose int(2)  not null default 0,option varchar(255),primary key (id)) ;";
+        echo $sql;
+        $Model->query($sql);
+        die; */
+        
         //获取来自客户端的jwt
         $postjwt=$_POST;
         $key="access_token";
@@ -56,7 +65,7 @@ class VotenewController extends Controller {
         /* $sql="insert into __PREFIX__vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
            uuid_short(),'$title',$body,'$datesql','$enddatesql',$uid','$tid','$body','$grade')";
          *///
-        $sql="insert into __PREFIX__vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
+        $sql="insert into". __PREFIX__."vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
         $id,'$title','$body','$datesql','$enddatesql',$uid,$tid,'$bodyofhtml','$grade')";
         
         if($Model->execute($sql))
@@ -66,8 +75,8 @@ class VotenewController extends Controller {
         
         //投票选项里加入字段
         if($suc){
-            for($i=1;$i<=$count;){
-                $sql="insert into __PREFIX__vote_options(id,tid,content) values ($i,$id,$contents[$i])";
+            for($i=0;$i<$count;$i++){
+                $sql="insert into ".__PREFIX__."vote_options(id,tid,content) values ($i,$id,$contents[$i])";
                 $Model->query($sql);
             }
         }
@@ -101,18 +110,19 @@ class VotenewController extends Controller {
     
     public function insertuser($voteid){
         $Model=new Model();
-    
-        $sql="create table __PREFIX__vote_user".$voteid."(uid bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null),option varchar(255)";
+        $sql="create table ".__PREFIX__."vote_user".$voteid." (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,option varchar(255),primary key (id)) ;";
         $Model->query($sql);
     
-        $sql="select grade from __PREFIX__vote where id=".$voteid;
+        $sql="select grade from ".__PREFIX__."vote where id=".$voteid;
+  
         $res=$Model->query($sql);
-        $grade=explode(";",$res);
+        $grade=explode(";",$res[0]['grade']);
+        echo "11111<br>";
         $count=count($grade)-1;
-    
         for($i=0;$i<$count;$i++){
-            $sql="insert into __PREFIX__vote_user".$voteid.
-            "select uid,name,grade from __PREFIX__user where grade like\"%$grade%\"";
+            $sql="insert into ".__PREFIX__."vote_user".$voteid.
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+            
             $Model->query($sql);
         }
     }

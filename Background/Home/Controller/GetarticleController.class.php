@@ -19,7 +19,7 @@ class  GetarticleController extends Controller {
         
         //对提取的jwt数据进行进一次选取；
         
-        $sql="select body from __PREFIX__article where id=".$art;
+        $sql="select body from ".__PREFIX__."article where id=".$art;
         
        // $sql="select body from __PREFIX__article where id=".$art;
         
@@ -76,7 +76,7 @@ class  GetarticleController extends Controller {
     public function articlecheck($userid,$articleid){
         $Model=new Model();
         $check=1;
-        $sql="update __PREFIX__article_user".$articleid." set check=".$check." where uid=".$userid;
+        $sql="update ".__PREFIX__."article_user".$articleid." set checken=".$check." where id=".$userid;
         $Model->query($sql);
         
     }

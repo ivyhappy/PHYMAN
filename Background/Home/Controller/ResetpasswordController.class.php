@@ -28,7 +28,7 @@ class ResetpasswordController extends Controller {
         
         //从数据库中读取想要注册的用户ID，若未注册，则向数据库中插入数据
         //若已经注册，则返回权限为authority=0为游客；登陆状态log=3为已注册；
-        $res=$Model->query("select id from __PREFIX__user where id=".$id);
+        $res=$Model->query("select id from ".__PREFIX__."user where id=".$id);
         
         
         if($res[0]['id']==null)
@@ -38,7 +38,7 @@ class ResetpasswordController extends Controller {
                 else{ 
                     $log="已发送新密码到邮箱，请及时修改密码";
                     $psw=$this->createRandomStr(10);
-                    $sql="update __PREFIX__user set psw=".$psw." where id=".$id;
+                    $sql="update ".__PREFIX__."user set psw=".$psw." where id=".$id;
                     //发送邮件
                     $log=$this->sendmail($res[0]['mailbox'], $psw);
                 }

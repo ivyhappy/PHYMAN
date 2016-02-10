@@ -7,6 +7,12 @@ use Firebase\JWT\JWT;
 class ArticlenewController extends Controller {
     
     public function index(){
+        $id=1;
+        $this::insertuser($id);
+        die;
+        
+        
+        
         //获取来自客户端的jwt
         $postjwt=$_POST;
         $key="access_token";
@@ -81,18 +87,19 @@ class ArticlenewController extends Controller {
     }
     public function insertuser($articleid){
         $Model=new Model();
-        
-        $sql="create table __PREFIX__article_user".$articleid."(uid bigint(12),name varchar(10),grade varchar(10),check int(1) default 0 not null)";
+        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id)) ;";
+       // $sql="create table ".__PREFIX__."article_user".$articleid."(id bigint(12),name varchar(10),grade varchar(10),check int(2) default 0 not null,primary key (id));";
         $Model->query($sql);
-
-        $sql="select grade from __PREFIX__article where id=".$articleid;
+echo $sql."<br>";
+        $sql="select grade from ".__PREFIX__."article where id=".$articleid;
         $res=$Model->query($sql);
-        $grade=explode(";",$res);
+        $grade=explode(";",$res[0]['grade']);
         $count=count($grade)-1;
-
+print_r($grade);
         for($i=0;$i<$count;$i++){
-            $sql="insert into __PREFIX__article_user".$articleid.
-            "select uid,name,grade from __PREFIX__user where grade like\"%$grade%\"";
+            $sql="insert into ".__PREFIX__."article_user".$articleid.
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+            echo $sql;
             $Model->query($sql);
         }
     }
