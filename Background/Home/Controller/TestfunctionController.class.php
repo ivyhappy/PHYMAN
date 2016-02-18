@@ -10,6 +10,10 @@ import('Vendor.mail');
 class TestfunctionController extends Controller {
     
     public function index(){
+        print_r($_POST);
+        echo "111111111111111111111";
+        $this->display("./Background/Home/View/Index/test.html");
+        die;
         $Model=new Model();
         $choose=0;
         //共有多少人投票
