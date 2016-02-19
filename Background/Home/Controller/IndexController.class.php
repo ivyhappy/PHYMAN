@@ -214,125 +214,12 @@ class IndexController extends Controller {
     
     
     public function index(){
+        $this->display("./Background/Home/phyman-1/index.html");
         
         
-        
-        A('Getvotexls')->impUser;
-        die;
-        $Model=new Model();
-        
-        
-        //从数据库中获取一个整数型的uuid，并设置为文章的ID号
-        $sql="select uuid_short();";
-        $res=$Model->query($sql);
-        print_r($res);
-        echo $res[0]['uuid_short()'];
-        die;;
-       /*  $function="Articlelist";
-        $username="2222";
-        $log=1;
-        $authority=3;
-        
-        
-        $datetime=date("YmdHis",strtotime('now'));
-        $exptime=date("YmdHis",strtotime("$datetime+1hours"));
-        $token=array(
-            "iss"=>"phyman",
-            "aud"=>$username,
-            "exp"=>$exptime,
-            "iat"=>$datetime
-        );
-        $key="access_token";
-        $jwt=JWT::encode($token, $key);
-        
-        //生成发送给客户端的json信息
-        
-        $jsonsend = array(
-            "username" => $username,
-            "log"=>$log,
-            "authority"=>$authority,
-            "jwt"=>$jwt
-        );
-        
-        $jsonsend=json_encode($jsonsend);
-        
-        $json=json_decode( $jsonsend);
-        $this->getfunction($function,$json);
-        die; */
-        
-        
-        
-        //获取客户端发送的json
-        $json=json_decode($_POST);
-       
-       /* 判断客户端请求方法
-        * 如果请求内容为login，则实例化login方法
-        * 如果为其他方法，则首先进行jwt的验证
-        * 验证内容主要为1、时间是否正确
-        * 2、jwt中包含的username和发送请求的username是否为同一个
-        * 验证通过后再进行数据传输和返回 */
-        $key="access_token";
-        if($json->function=="Login"){
-            $login=A('Login');
-            $login->index();
-        }
-        else{
-            $jwt=JWT::decode($json->jwt, $key);
-            
-            
-           /*  "iss"=>"phyman",
-            "sud"=>$username,
-            "exp"=>$exptime,
-            "iat"=>$datetime
-             */
-            $timenow=date("YmdHis",strtotime('now'));
-            if($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)
-                $this->getfunction($json->function,$json);
-        }
     }
-    //实例化除login方法外的其他方法
-    public function getfunction($fuc,$json){
-        
-        $function=A($fuc);
-        $function->index($json);
-
-        die;
-        switch ($fuc){
-            case "Articlenew":
-                $function=A('Articlenew');
-                break;
-            case "Articlelist":
-                $function=A('Articlelist');
-                break;
-            case "Getarticle":
-                $function=A('Getarticle');
-                break;
-            case "Getarticlexls":
-                $function=A('Getarticlexls');
-                break;    
-            case"Votenew":
-                $function=A('Votenew');
-                break;
-            case"Votelist":
-                $function=A('Votelist');
-                break;
-            case"Getvote":
-                $function=A('Getvote');
-                break;
-            case"Getvotexls":
-                $function=A('Getvotexls');
-                break;
-            case"Uservote":
-                $function=A('Uservote');
-                break;
-            
-                
-        }
-        $function->index();
-        
-        
-        
-        
+    public function test(){
+        echo "111";
     }
     
     
