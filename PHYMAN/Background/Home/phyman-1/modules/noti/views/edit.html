@@ -1,0 +1,14 @@
+<div ng-controller="NotiEditorCtrl">
+  <md-input-container>
+    <label>标题：</label>
+    <input name="title" type="text" ng-model="noti.title" md-maxlength="40" required>
+  </md-input-container>
+  <div flex-gt-sm="85" layout="column">
+    <textarea ui-tinymce="tinymceOptions" ng-model="noti.content" flex></textarea>
+    <div layout="row">
+      <span flex></span>
+      <md-button class="md-raised md-primary" ng-click="submit()">发布</md-button>
+    </div>
+  </div>
+
+</div>
