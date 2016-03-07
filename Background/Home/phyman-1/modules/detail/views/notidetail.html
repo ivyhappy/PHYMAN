@@ -1,0 +1,23 @@
+<!-- <section id="no111" ng-controller="detailCtrl">
+<p>hello world</p>
+<p ng-bind="detail.id">
+<p>{{detail.id}}</p>
+<P>{{access_token}}</P>
+
+</section> -->
+<div  ng-controller="notidetailCtrl" layout="column"   ng-cloak ="" class="contentdemoBasicUsage">
+<div ng-repeat="notification in detail track by $index">
+  <md-toolbar class="md-warn">
+    <div class="md-tall md-accent">
+      <h2 class="md-toolbar-tools">{{notification.title}}</h2>
+      <p class="md-toolbar-tools md-toolbar-tools-bottom">{{notification.date}}     {{notification.grade}}</p>
+    </div>
+  </md-toolbar>
+  <md-content flex layout-padding >
+    <p>{{notification.body}}
+    </p>
+  </md-content>
+  </div>
+</div>
+
+

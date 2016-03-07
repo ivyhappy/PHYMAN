@@ -1,0 +1,2447 @@
+[ 2016-01-30T10:23:46+08:00 ] ::1 /PHYMAN/index.php?a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000644s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017134s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.108931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020493s ]
+
+[ 2016-01-30T10:24:13+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000270s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002198s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002859s ]
+
+[ 2016-01-30T10:24:13+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000188s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002248s ]
+
+[ 2016-01-30T10:24:31+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000353s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002122s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002350s ]
+
+[ 2016-01-30T10:24:44+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002211s ]
+
+[ 2016-01-30T10:26:33+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003294s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 372 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002906s ]
+
+[ 2016-01-30T10:26:54+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002181s ]
+
+[ 2016-01-30T10:46:44+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2016-01-30T10:46:58+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002919s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003311s ]
+
+[ 2016-01-30T10:48:59+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002689s ]
+
+[ 2016-01-30T10:49:12+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002754s ]
+
+[ 2016-01-30T10:49:29+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000296s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003150s ]
+
+[ 2016-01-30T10:51:27+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003254s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003027s ]
+
+[ 2016-01-30T10:51:36+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003693s ]
+
+[ 2016-01-30T10:51:46+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002318s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002692s ]
+
+[ 2016-01-30T10:51:50+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003450s ]
+
+[ 2016-01-30T10:52:03+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] file_get_contents(__DIRNAME__test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002222s ]
+
+[ 2016-01-30T10:55:06+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003483s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(./contents/test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003078s ]
+
+[ 2016-01-30T10:55:08+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(./contents/test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002907s ]
+
+[ 2016-01-30T10:55:33+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003714s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(../contents/test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002814s ]
+
+[ 2016-01-30T10:55:49+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002625s ]
+
+[ 2016-01-30T10:56:00+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000286s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002111s ]
+
+[ 2016-01-30T10:56:01+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002791s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002236s ]
+
+[ 2016-01-30T10:56:09+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003317s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002433s ]
+
+[ 2016-01-30T10:56:18+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003262s ]
+
+[ 2016-01-30T10:56:19+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002080s ]
+
+[ 2016-01-30T10:56:20+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 373 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002195s ]
+
+[ 2016-01-30T10:57:18+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 374 行.
+NOTIC: [2] file_get_contents(test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2016-01-30T10:57:29+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 374 行.
+NOTIC: [2] file_get_contents(./test.txt): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003124s ]
+
+[ 2016-01-30T10:59:41+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003135s ]
+
+[ 2016-01-30T10:59:57+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003102s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002800s ]
+
+[ 2016-01-30T11:00:15+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2016-01-30T11:00:30+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002235s ]
+
+[ 2016-01-30T11:00:36+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002079s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002448s ]
+
+[ 2016-01-30T11:01:13+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000291s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002240s ]
+
+[ 2016-01-30T11:02:27+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003897s ]
+
+[ 2016-01-30T11:03:11+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003131s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002291s ]
+
+[ 2016-01-30T11:03:22+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002328s ]
+
+[ 2016-01-30T11:03:51+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003218s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003526s ]
+
+[ 2016-01-30T11:04:37+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003137s ]
+
+[ 2016-01-30T11:05:18+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002291s ]
+
+[ 2016-01-30T11:05:34+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002830s ]
+
+[ 2016-01-30T11:06:01+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002293s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+NOTIC: [8] Use of undefined constant __DIRNAME__ - assumed '__DIRNAME__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003440s ]
+
+[ 2016-01-30T11:06:19+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+NOTIC: [8] Use of undefined constant __PUBLIC__ - assumed '__PUBLIC__' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002426s ]
+
+[ 2016-01-30T11:06:30+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002234s ]
+
+[ 2016-01-30T11:06:31+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003754s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002627s ]
+
+[ 2016-01-30T11:07:45+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002529s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 395 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2016-01-30T11:10:57+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002691s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003828s ]
+
+[ 2016-01-30T11:10:59+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000414s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003273s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002458s ]
+
+[ 2016-01-30T11:11:41+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000318s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002729s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002235s ]
+
+[ 2016-01-30T11:11:43+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002968s ]
+
+[ 2016-01-30T11:11:51+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2016-01-30T11:12:19+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000330s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002742s ]
+
+[ 2016-01-30T11:14:00+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 396 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002403s ]
+
+[ 2016-01-30T11:28:03+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000608s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017542s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 405 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020150s ]
+
+[ 2016-01-30T11:30:07+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002187s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 405 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002750s ]
+
+[ 2016-01-30T11:30:18+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002795s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 405 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select psw,authority from phyman_user where id=201522040840 [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002492s ]
+
+[ 2016-01-30T11:30:27+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002159s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 405 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002434s ]
+
+[ 2016-01-30T15:04:45+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000347s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029565s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 408 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023803s ]
+
+[ 2016-01-30T15:05:01+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007935s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 408 行.
+NOTIC: [8] Undefined variable: jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 147 行.
+NOTIC: [8] Undefined variable: key D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 147 行.
+ERR: Key may not be empty
+
+[ 2016-01-30T15:05:19+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020659s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 408 行.
+NOTIC: [8] Undefined variable: jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 147 行.
+NOTIC: [8] Undefined variable: key D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 147 行.
+ERR: Key may not be empty
+
+[ 2016-01-30T15:05:41+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000393s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 408 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003524s ]
+
+[ 2016-01-30T15:06:01+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000353s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003204s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 408 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004890s ]
+
+[ 2016-01-30T15:08:04+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000267s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011662s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 410 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003713s ]
+
+[ 2016-01-30T15:08:26+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000263s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 410 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002462s ]
+
+[ 2016-01-30T15:10:20+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008631s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 410 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004706s ]
+
+[ 2016-01-30T15:11:58+08:00 ] ::1 /PHYMAN/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000267s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002629s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 411 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005822s ]
+
+[ 2016-01-30T16:07:44+08:00 ] ::1 /PHYMAN/index.php?m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017100s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 411 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024575s ]
+
+[ 2016-01-30T16:13:28+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003550s ]
+ERR: 无法加载控制器:Articlenew
+
+[ 2016-01-30T16:14:06+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002189s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\firebase\php-jwt\src\JWT.php 第 65 行.
+ERR: Wrong number of segments
+
+[ 2016-01-30T16:14:44+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+
+[ 2016-01-30T16:14:58+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:14:57','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.319394s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 86 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 87 行.
+NOTIC: [8] Undefined variable: key D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: key D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 100 行.
+ERR: Key may not be empty
+
+[ 2016-01-30T16:15:09+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:15:09','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:15:09','1','20160130161509物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.191228s ]
+ERR: 1062:Duplicate entry '2016' for key 'PRIMARY'
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:15:09','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:15:09','1','20160130161509物电学院打造“三位一体”的精英Phyman培养体系.html','1')
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 87 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 88 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003128s ]
+
+[ 2016-01-30T16:20:20+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 43 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 73 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 73 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:20:20','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.000473s ]
+ERR: 1062:Duplicate entry '2016' for key 'PRIMARY'
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:20:20','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1')
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 94 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 95 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002713s ]
+
+[ 2016-01-30T16:20:57+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002487s ]
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 43 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 74 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:20:57','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.000558s ]
+ERR: 1062:Duplicate entry '2016' for key 'PRIMARY'
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:20:57','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1')
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
+[ 2016-01-30T16:21:22+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002689s ]
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 43 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 75 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 75 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:21:22','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.000544s ]
+ERR: 1062:Duplicate entry '2016' for key 'PRIMARY'
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:21:22','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:14:57','1','20160130161457物电学院打造“三位一体”的精英Phyman培养体系.html','1')
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 96 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002526s ]
+
+[ 2016-01-30T16:22:36+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:22:36','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:22:36','1','20160130162236物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.000555s ]
+ERR: 1062:Duplicate entry '2016' for key 'PRIMARY'
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '2016-01-30 16:22:36','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:22:36','1','20160130162236物电学院打造“三位一体”的精英Phyman培养体系.html','1')
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004996s ]
+
+[ 2016-01-30T16:25:31+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000276s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '20160130162531','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:25:31','1','20160130162531物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.128209s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004103s ]
+
+[ 2016-01-30T16:30:50+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000318s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005461s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '20160130163049','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:30:49','1','20160130163049物电学院打造“三位一体”的精英Phyman培养体系.html','1') [ RunTime:0.087354s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003901s ]
+
+[ 2016-01-30T16:31:45+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '20160130163145','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:31:45','1','20160130163145.html','1') [ RunTime:0.042670s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003289s ]
+
+[ 2016-01-30T16:32:50+08:00 ] ::1 /PHYMAN/index.php?c=Articlenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003692s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into phyman_article(id,title,uid,date,tid,body,grade) values (
+           '20160130163250','物电学院打造“三位一体”的精英Phyman培养体系','201522040840','2016-01-30 16:32:50','1','20160130163250.html','1') [ RunTime:0.052299s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined variable: username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlenewController.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002284s ]
+
+[ 2016-01-30T16:45:28+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003921s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 419 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2016-01-30T16:46:43+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002300s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 423 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title=1 and uid= and tid= [ RunTime:0.000393s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and tid=' at line 1
+ [ SQL语句 ] : select * from phyman_article where title=1 and uid= and tid=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003423s ]
+
+[ 2016-01-30T16:47:12+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000577s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002190s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 423 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title=1 and uid= and tid= [ RunTime:0.000396s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and tid=' at line 1
+ [ SQL语句 ] : select * from phyman_article where title=1 and uid= and tid=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2016-01-30T16:47:44+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 423 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title=1 [ RunTime:0.056871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003890s ]
+
+[ 2016-01-30T16:51:21+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000413s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002434s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 446 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title=1 [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002317s ]
+
+[ 2016-01-30T16:51:57+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 446 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title=1 [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002591s ]
+
+[ 2016-01-30T16:52:25+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 446 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002469s ]
+
+[ 2016-01-30T16:52:40+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002447s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 446 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002262s ]
+
+[ 2016-01-30T16:52:44+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 446 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003017s ]
+
+[ 2016-01-30T16:53:35+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002440s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003226s ]
+
+[ 2016-01-30T16:54:02+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002423s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004895s ]
+
+[ 2016-01-30T16:54:50+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003077s ]
+
+[ 2016-01-30T16:56:18+08:00 ] ::1 /PHYMAN/index.php?a=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000413s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002567s ]
+
+[ 2016-01-30T16:56:37+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000277s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003589s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003707s ]
+
+[ 2016-01-30T16:56:50+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002554s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002364s ]
+
+[ 2016-01-30T16:56:52+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000276s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002766s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002295s ]
+
+[ 2016-01-30T16:57:41+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002856s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003417s ]
+
+[ 2016-01-30T16:57:43+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005684s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004868s ]
+
+[ 2016-01-30T16:57:55+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2016-01-30T16:58:00+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003966s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2016-01-30T16:58:50+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003160s ]
+
+[ 2016-01-30T16:58:54+08:00 ] ::1 /PHYMAN/index.php?a=textread
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000291s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2016-01-30T17:11:22+08:00 ] ::1 /PHYMAN/index.php?a=authority
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002594s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 453 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_authority [ RunTime:0.028822s ]
+NOTIC: [8] Undefined variable: res D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002761s ]
+
+[ 2016-01-30T17:11:22+08:00 ] ::1 /PHYMAN/index.php?a=authority
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003362s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 453 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_authority [ RunTime:0.000449s ]
+NOTIC: [8] Undefined variable: res D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2016-01-30T17:11:40+08:00 ] ::1 /PHYMAN/index.php?a=authority
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002704s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 453 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_authority [ RunTime:0.000489s ]
+NOTIC: [8] Undefined variable: res D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003045s ]
+
+[ 2016-01-30T17:11:54+08:00 ] ::1 /PHYMAN/index.php?a=authority
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000244s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002715s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 453 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_authority [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002523s ]
+
+[ 2016-01-30T17:13:04+08:00 ] ::1 /PHYMAN/index.php?a=authority
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001970s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 457 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_authority [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002230s ]
+
+[ 2016-01-30T17:21:30+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson()
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000270s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004706s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 465 行.
+ERR: 非法操作:testmultijson()
+
+[ 2016-01-30T17:21:42+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002956s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 465 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000345s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003338s ]
+
+[ 2016-01-30T17:21:42+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000259s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 465 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000319s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002970s ]
+
+[ 2016-01-30T17:22:09+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002781s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 465 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000262s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002264s ]
+
+[ 2016-01-30T17:22:12+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003186s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 465 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000311s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2016-01-30T17:22:27+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002056s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000258s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002412s ]
+
+[ 2016-01-30T17:22:38+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002612s ]
+
+[ 2016-01-30T17:22:39+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002996s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002504s ]
+
+[ 2016-01-30T17:22:40+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000281s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003579s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003919s ]
+
+[ 2016-01-30T17:23:07+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004344s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 467 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003504s ]
+
+[ 2016-01-30T17:24:11+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002679s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 467 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003991s ]
+
+[ 2016-01-30T17:24:20+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004596s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003257s ]
+
+[ 2016-01-30T17:24:30+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 469 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [2] Division by zero D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002126s ]
+
+[ 2016-01-30T17:24:53+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000427s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002840s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 469 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003858s ]
+
+[ 2016-01-30T17:25:10+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003049s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 469 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002374s ]
+
+[ 2016-01-30T17:26:55+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002212s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 469 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003059s ]
+
+[ 2016-01-30T17:27:12+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where title like "%物电%" [ RunTime:0.001781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002748s ]
+
+[ 2016-01-30T17:29:11+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where date like "%2015%" [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002620s ]
+
+[ 2016-01-30T17:29:47+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003682s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 466 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article where date like "%2016-01%" [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2016-01-30T17:37:39+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003439s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8] Undefined variable: sqlofdate D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL:  [ RunTime:0.000364s ]
+ERR: 1065:Query was empty
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003241s ]
+
+[ 2016-01-30T17:37:51+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000304s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_user where name=林小艺 [ RunTime:0.018322s ]
+ERR: 1054:Unknown column '林小艺' in 'where clause'
+ [ SQL语句 ] : select id from phyman_user where name=林小艺
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003259s ]
+
+[ 2016-01-30T17:37:53+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002517s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_user where name=林小艺 [ RunTime:0.000364s ]
+ERR: 1054:Unknown column '林小艺' in 'where clause'
+ [ SQL语句 ] : select id from phyman_user where name=林小艺
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002289s ]
+
+[ 2016-01-30T17:38:10+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004100s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_user where name=林小艺 [ RunTime:0.000463s ]
+ERR: 1054:Unknown column '林小艺' in 'where clause'
+ [ SQL语句 ] : select id from phyman_user where name=林小艺
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003576s ]
+
+[ 2016-01-30T17:38:23+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004306s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_user where name="林小艺" [ RunTime:0.103389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004079s ]
+
+[ 2016-01-30T17:38:41+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003307s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * frome phyman_article where
+       select id from phyman_user where name="林小艺" [ RunTime:0.000308s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'frome phyman_article where
+       select id from phyman_user where name="林小' at line 1
+ [ SQL语句 ] : select * frome phyman_article where
+       select id from phyman_user where name="林小艺"
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002723s ]
+
+[ 2016-01-30T17:39:50+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002742s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where
+       select id from phyman_user where name="林小艺" [ RunTime:0.000337s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'select id from phyman_user where name="林小艺"' at line 2
+ [ SQL语句 ] : select * from  phyman_article where
+       select id from phyman_user where name="林小艺"
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003109s ]
+
+[ 2016-01-30T17:40:12+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where uid=
+       select id from phyman_user where name="林小艺" [ RunTime:0.000333s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'select id from phyman_user where name="林小艺"' at line 2
+ [ SQL语句 ] : select * from  phyman_article where uid=
+       select id from phyman_user where name="林小艺"
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003635s ]
+
+[ 2016-01-30T17:40:24+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where uid=(
+       select id from phyman_user where name="林小艺") [ RunTime:0.064284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002531s ]
+
+[ 2016-01-30T17:43:05+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000296s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where uid=(
+                   select id from phyman_type where name="时间") [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2016-01-30T17:43:49+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where uid=(
+                   select tid from phyman_type where name="时间") [ RunTime:0.102304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002481s ]
+
+[ 2016-01-30T17:44:22+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where tid=(
+                   select id from phyman_type where name="时间") [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002300s ]
+
+[ 2016-01-30T17:47:10+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_query(): Unable to save result set D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 92 行.
+SQL: select * from  phyman_article where tid=(
+                   select id from phyman_type where name="时间") [ RunTime:0.000982s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select * from  phyman_article where tid=(
+                   select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002414s ]
+
+[ 2016-01-30T17:48:32+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间") [ RunTime:0.000348s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2016-01-30T17:49:22+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间") [ RunTime:0.000320s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002430s ]
+
+[ 2016-01-30T17:49:29+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002423s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间") [ RunTime:0.000339s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003843s ]
+
+[ 2016-01-30T17:49:34+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002409s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间") [ RunTime:0.000540s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2016-01-30T17:50:22+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where tid=(
+                   select id from phyman_type where name="时间") [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002706s ]
+
+[ 2016-01-30T17:50:39+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间") [ RunTime:0.000379s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002655s ]
+
+[ 2016-01-30T17:51:21+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002074s ]
+
+[ 2016-01-30T17:51:30+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003221s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id from phyman_type where name="时间" [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2016-01-30T17:51:53+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000188s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001969s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from  phyman_article where tid=(
+          select id from phyman_type where name="时间") [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003039s ]
+
+[ 2016-01-30T17:52:20+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000296s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 468 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_query(): Unable to save result set D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 92 行.
+SQL: select * from  phyman_article where tid=(
+          select id from phyman_type where name="时间") [ RunTime:0.001397s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select * from  phyman_article where tid=(
+          select id from phyman_type where name="时间")
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002391s ]
+
+[ 2016-01-30T18:05:43+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021129s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 504 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: id D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: authority D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [2] json_decode() expects parameter 1 to be string, object given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.062597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.063808s ]
+
+[ 2016-01-30T18:06:56+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 478 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004400s ]
+
+[ 2016-01-30T18:06:56+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002660s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 478 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004175s ]
+
+[ 2016-01-30T18:07:10+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001948s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 478 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002213s ]
+
+[ 2016-01-30T18:07:40+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002352s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: id D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: authority D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] json_decode() expects parameter 1 to be string, object given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002656s ]
+
+[ 2016-01-30T18:08:08+08:00 ] ::1 /PHYMAN/index.php?a=testjwt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003137s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 506 行.
+NOTIC: [8] Undefined variable: sss D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: id D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: log D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: authority D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [2] json_decode() expects parameter 1 to be string, object given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004306s ]
+
+[ 2016-01-30T18:18:18+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002157s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 505 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article order by id desc [ RunTime:0.001741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002512s ]
+
+[ 2016-01-30T18:20:53+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000308s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 505 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date,grade from phyman_article order by id desc [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002646s ]
+
+[ 2016-01-30T19:38:53+08:00 ] ::1 /PHYMAN/index.php?a=testmultijson
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000360s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017695s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 505 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date,grade from phyman_article order by id desc [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019391s ]
+
+[ 2016-01-30T19:39:17+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003214s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:39:28+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:39:30+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:39:53+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000327s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003514s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:40:31+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:40:33+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+ERR: 无法加载控制器:Articlelist
+
+[ 2016-01-30T19:40:57+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+NOTIC: [8] Undefined variable: Model D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\ArticlelistController.class.php 第 55 行.
+
+[ 2016-01-30T19:41:21+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002519s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article order by id desc [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003264s ]
+
+[ 2016-01-30T19:42:27+08:00 ] ::1 /PHYMAN/index.php?c=Articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002278s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_article order by id desc [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004021s ]
+
+[ 2016-01-30T19:57:55+08:00 ] ::1 /PHYMAN/index.php?c=Getarticlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002839s ]
+ERR: 无法加载控制器:Getarticlelist
+
+[ 2016-01-30T19:58:13+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002173s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.001105s ]
+NOTIC: [8] Array to string conversion D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 45 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2016-01-30T19:58:45+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000524s ]
+NOTIC: [8] Array to string conversion D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 46 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002179s ]
+
+[ 2016-01-30T19:59:20+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000190s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000463s ]
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [8] Undefined index: body D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [2] fopen(D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 37 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003388s ]
+
+[ 2016-01-30T19:59:34+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000343s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002991s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000507s ]
+NOTIC: [8] Array to string conversion D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: fp D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 47 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, null given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002138s ]
+
+[ 2016-01-30T19:59:49+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000686s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003224s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000709s ]
+NOTIC: [8] Undefined index: body D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 31 行.
+NOTIC: [2] fopen(D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 37 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: conn D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\GetarticleController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002564s ]
+
+[ 2016-01-30T19:59:58+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002430s ]
+
+[ 2016-01-30T20:00:08+08:00 ] ::1 /PHYMAN/index.php?c=Getarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004456s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select body from phyman_article where id=20160130163250 [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+

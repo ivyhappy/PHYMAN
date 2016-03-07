@@ -1,0 +1,70 @@
+<div  ng-cloak="" class="sliderdemoBasicUsage" >
+  <md-content style="margin: 16px; padding:16px">
+    
+    <h4>
+      {{detail.title}} <span ng-attr-style="border: 1px solid #333; background: rgb({{color.red}},{{color.green}},{{color.blue}})">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </h4>
+    <p >
+    		{{detail.content}}
+ 			</p>
+    <!-- <md-list class="content-list md-whiteframe-1dp">
+      <md-list-item class="md-2-line" ng-repeat="item in vote | voteFilter: 'new'" ng-click="viewVote(item.id)" ui-sref="vote.detail({id:item.id})">
+          <span class="md-title">{{item.title}}</span>
+          <span flex></span>
+          <span class="md-caption">{{item.begtime | date:'MM-dd'}}</span>
+        <md-divider ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>  -->
+    
+    
+<section>
+
+ <md-list class="content-list md-whiteframe-1dp" ng-repeat="item in result.options ">
+      <md-list-item class="md-line" >
+          <div  class="div-left">{{item.content}}</div>
+        </md-list-item>
+        <md-list-item class="md-line">
+        
+        <md-progress-linear md-mode="determinate"  value="{{item.num | votedetailFilter: result.sum}}" aria-label="red" id="red-slider" class="" disabled></md-progress-linear>
+          
+         <div flex="20" layout="" layout-align="center center"><p>{{item.num | perFilter: result.sum}}</p>
+      </div>
+      </md-list-item>
+    </md-list>
+
+
+    <!-- <div layout="colum" class="md-2-line" ng-repeat="item in result.options">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">{{item.content}}</span>
+      </div>
+      <md-slider flex="" min="0" max={{result.sum}} ng-model="item.num" aria-label="red" id="red-slider" class="" disabled>
+      </md-slider>
+      <div flex="20" layout="" layout-align="center center"><p>{{item.num}}</p>
+      </div>
+    </div> -->
+ </section>
+
+   <!--  <div layout="">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">G</span>
+      </div>
+      <md-slider flex="" ng-model="color.green" min="0" max="255" aria-label="green" id="green-slider" class="md-accent">
+      </md-slider>
+      <div flex="20" layout="" layout-align="center center">
+        <input flex="" type="number" ng-model="color.green" aria-label="green" aria-controls="green-slider">
+      </div>
+    </div>
+
+    <div layout="">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">B</span>
+      </div>
+      <md-slider flex="" ng-model="color.blue" min="0" max="255" aria-label="blue" id="blue-slider" class="md-primary">
+      </md-slider>
+      <div flex="20" layout="" layout-align="center center">
+        <input flex="" type="number" ng-model="color.blue" aria-label="blue" aria-controls="blue-slider">
+      </div>
+    </div> -->
+
+  </md-content>
+</div>

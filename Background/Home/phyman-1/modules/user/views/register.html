@@ -1,0 +1,29 @@
+<md-dialog id="login" ng-controller="RegisterCtrl">
+   <md-toolbar class="md-toolbar-tools">
+      <span flex></span>
+      <span class="md-title">Register</span>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()" aria-label="Cancel">
+         <md-icon md-svg-src="assets/images/ic_close_48px.svg"></md-icon>
+      </md-button>
+   </md-toolbar>
+   <md-progress-linear md-mode="indeterminate" ng-show="isRegistering"></md-progress-linear>
+   <form name="registerForm" layout="column" layout-padding>
+      <md-input-container>
+         <label>Username:</label>
+         <input name="username" type="text" ng-disabled="isRegistering" ng-model="user.username" ng-pattern="/^\w{8,20}$/" required>
+         <div ng-messages="registerForm.username.$error" ng-show="registerForm.username.$dirty">
+            <div ng-message="pattern">Username should be between 8 to 20 characters.</div>
+         </div>
+      </md-input-container>
+      <md-input-container>
+         <label>Password:</label>
+         <input name="password" type="{{showPassword ? 'text' : 'password'}}" ng-disabled="isRegistering" ng-model="user.password" ng-pattern="/^\w{8,16}$/" required>
+         <div ng-messages="registerForm.password.$error" ng-show="registerForm.password.$dirty">
+            <div ng-message="pattern">Password should be between 8 to 16 characters.</div>
+         </div>
+      </md-input-container>
+      <md-checkbox id="show-passwd-checkbox" ng-click="toggleShowPassword()">Show password</md-checkbox>
+      <md-button class="md-raised md-primary"ng-disabled="registerForm.$pristine || registerForm.$invalid || !registerForm.$error || isRegistering" ng-click="onRegisterClick()" aria-label="Register">Register</md-button>
+   </form>
+</md-dialog>
