@@ -96,6 +96,7 @@ class AdminController extends Controller {
     
     }
     public function insertNotiuser($articleid){
+        
         $Model=new Model();
         $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id)) ;";
         // $sql="create table ".__PREFIX__."article_user".$articleid."(id bigint(12),name varchar(10),grade varchar(10),check int(2) default 0 not null,primary key (id));";
@@ -114,6 +115,25 @@ class AdminController extends Controller {
         }
     }
     public function newVote(){
+/* 
+
+        $option="111111;22222222;";
+        $contents=explode(";",$option);//此处为投票具体内容
+        $count=count($contents)-1;//总共有多少个投票内容
+        $Model=new Model();
+        $id=333;
+        $suc=1;
+        if($suc==1){
+            for($i=0;$i<$count;$i++){
+                $j=$i+1;
+                $sql="insert into ".__PREFIX__."vote_options (vid,content,id) values ($id,'$contents[$i]',$j)";
+                $Model->query($sql);
+            }
+        }
+        
+        
+        
+        die; */
         
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
@@ -162,7 +182,7 @@ class AdminController extends Controller {
         $enddatesql=date("Y-m-d H:i:s",strtotime($enddate));//放入数据库的时间格式
     
         //对投票选项进行处理
-        $contents=explode(";",$decoded->options);//此处为投票具体内容
+        $contents=explode(";",$option);//此处为投票具体内容
         $count=count($contents)-1;//总共有多少个投票内容
     
         //将读取到的html文件写入到硬盘文件
@@ -195,9 +215,10 @@ class AdminController extends Controller {
             $suc=0;
         
         //投票选项里加入字段
-        if($suc){
+        if($suc==1){
             for($i=0;$i<$count;$i++){
-                $sql="insert into ".__PREFIX__."vote_options(id,vid,content) values ($i,$id,$contents[$i])";
+                $j=$i+1;
+                $sql="insert into ".__PREFIX__."vote_options (vid,content,id) values ($id,'$contents[$i]',$j)";
                 $Model->query($sql);
             }
         }
@@ -220,17 +241,16 @@ class AdminController extends Controller {
         $sql="create table ".__PREFIX__."vote_user".$voteid." (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,options varchar(255),primary key (id)) ;";
         $Model->query($sql);
     
-        $sql="select grade from ".__PREFIX__."vote where id=".$voteid;
+       // $sql="select grade from ".__PREFIX__."vote where id=".$voteid;
     
-        $res=$Model->query($sql);
-        $grade=explode(";",$res[0]['grade']);
-        echo "11111<br>";
-        $count=count($grade)-1;
-        for($i=0;$i<$count;$i++){
+        //$res=$Model->query($sql);
+        //$grade=explode(";",$res[0]['grade']);
+      //  $count=count($grade)-1;
+      //  for($i=0;$i<$count;$i++){
             $sql="insert into ".__PREFIX__."vote_user".$voteid.
-            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user";// where grade like\"%$grade[$i]%\";
             $Model->query($sql);
-        }
+        //}
     }
     
     public function uploadFile(){

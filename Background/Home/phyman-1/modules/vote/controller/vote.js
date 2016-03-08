@@ -153,13 +153,11 @@ angular.module('phyman.vote',['ngMaterial', 'ngMessages','ngMessages', 'angular-
 		 $scope.isNewVote = true;
 		 $options="";
 		 for(var i=0;i<$scope.options.length;i++){
-			 for(var votelist in $scope.options[i]){
 			   	if(!$scope.options[i]['optcontent']==""){
 			    	$options=$options+$scope.options[i]['optcontent']+";";	
-			   	}
 		     } 
 		 }
-		 $scope.options;
+		 alert($options);
          var promise = VoteService.newVote($scope.vote,$options);
          promise.then(function(response) {
              $scope.isNewVote = false;

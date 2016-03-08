@@ -296,7 +296,7 @@ class VoteController extends Controller {
      $Model=new Model();
         $choose=0;
         //共有多少人投票
-        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid." where choose=1";
+        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid;
         $res=$Model->query($sql);
         $sum=$res[0]['count(*)'];
         
