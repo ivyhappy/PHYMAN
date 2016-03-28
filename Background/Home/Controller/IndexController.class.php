@@ -17,11 +17,10 @@ class IndexController extends Controller {
         
         //从数据库中读取用户的password和权限
         $Model=new Model();
-        $res=$Model->query("select name,psw,authority from ".__PREFIX__."user where id=".$username);
+        $res=$Model->query("select name,psw,authority,grade from ".__PREFIX__."user where id=".$username);
         $authority=$res[0]['authority'];
         $name=$res[0]['name'];
-        
-        
+        $grade=$res[0]['grade'];
         //返回数据：
         //1：log登录是否成功（0=成功，1=密码错误；2=该账号未注册;3=已注册）
         //2：权限（0=游客；1=管理员；2=编辑；3=用户）
@@ -34,14 +33,6 @@ class IndexController extends Controller {
         else
             $log=1;
         
-        /*    iss：Issuer，发行者
-         sub：Subject，主题
-         aud：Audience，观众
-         exp：Expiration time，过期时间
-         nbf：Not before
-         iat：Issued at，发行时间
-         jti：JWT ID */
-        
         
         //生成发送给客户端的jwt验证信息
         $datetime=date("YmdHis",strtotime('now'));
@@ -50,7 +41,11 @@ class IndexController extends Controller {
             "iss"=>"phyman",
             "aud"=>$username,
             "exp"=>$exptime,
-            "iat"=>$datetime
+            "iat"=>$datetime,
+            "name" => $name,
+            "uid" => $username,
+            "viewlevel"=>$grade,
+            "permission"=>$authority
         );
         $key="access_token";
         $jwt=JWT::encode($token, $key);
@@ -58,50 +53,49 @@ class IndexController extends Controller {
         //生成发送给客户端的json信息
         
         $jsonsend = array(
-            "username" => $username,
-            "log"=>$log,
-            "authority"=>$authority,
-            "access_token"=>$jwt
+            
+            "jwt"=>$jwt
         );
         
         $jsonsend=json_encode($jsonsend);
-        print_r($jsonsend);
+        echo $jsonsend;
       //  $this->display("./Background/Home/phyman-1/index.html");
         
     }
     public function register(){
          //获取客户端发送的json
-        $json=json_decode($_POST);
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
     
         $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        }
-    
         $arr=$json;
-        $id=$arr->username;//用户名为学号，也是数据库中的ID
         $name=$arr->name;
         $psw=$arr->password;
         $sex=$arr->sex;
-        $authority=3;
-        $img=$arr->img;
+        $authority="学生";
         $grade=$arr->grade;
-        $mailbox=$arr->mailbox;
         
         //对密码进行加密处理
-        
-        
-        //初始化模型
         $Model=new Model();
-        
+        $hasid=true;
+        while($hasid){
+           for($i=0;$i<12;$i++){
+                if($i==0)
+                    $b[]=rand(3,9);
+                else
+                    $b[]=rand(0,9);
+                
+            }
+            $id=join("",$b);
+            $sql="select * from ".__PREFIX__."user where id=".$id;
+            $res=$Model->query($sql);
+            if($res==null)
+                $hasid=false;
+        }
         //从数据库中读取想要注册的用户ID，若未注册，则向数据库中插入数据
-        //若已经注册，则返回权限为authority=0为游客；登陆状态log=3为已注册；
-        $res=$Model->query("select * from ".__PREFIX__."user where id=".username);
         if($res==null){
             $sql="insert into ".__PREFIX__."user(id,name,sex,psw,authority,img,grade,mailbox) values (
-            $id,'$name','$sex','$psw',$authority,'$img',$grade,'$mailbox'";
+            $id,'$name','$sex','$psw',$authority,$grade,'$mailbox'";
             $Model->query($sql);
             $log=0;
         }
@@ -127,16 +121,20 @@ class IndexController extends Controller {
                 "iss"=>"phyman",
                 "aud"=>$id,
                 "exp"=>$exptime,
-                "iat"=>$datetime
+                "iat"=>$datetime,
+                "name" => $name,
+                "uid" => $id,
+                "viewlevel"=>$grade,
+                "permission"=>$authority
             );
             $key="access_token";
             $jwt=JWT::encode($token, $key);
             
             $jsonsend = array(
-                "username" => $id,
+              /*   "username" => $id,
                 "log"=>$log,
-                "authority"=>$authority,
-                "access_token"=>$jwt
+                "authority"=>$authority, */
+                "jwt"=>$jwt
             );
         }
   
@@ -145,9 +143,51 @@ class IndexController extends Controller {
                 
         echo $jsonsend;
     }
-    public function resetpassword(){
+    
+    public function reset_password(){
+        //获取客户端发送的json
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $jwt=$json->jwt;
+        $key="access_token";
+        
+        $jwt=JWT::decode($jwt,$key,array('HS256'));
+        
+        $id=$jwt->uid;
+        $psw=$json->new_password;
+        
+        $Model=new Model();
+        $sql="update ".__PREFIX__."user set psw=".$psw." where id=".$id;
+           
+        $token=array(
+            "iss"=>"phyman",
+            "aud"=>$id,
+            "exp"=>$jwt->exptime,
+            "iat"=>$jwt->datetime,
+            "name" => $jwt->name,
+            "uid" => $id,
+            "viewlevel"=>$jwt->grade,
+            "permission"=>$jwt->authority
+        );
+        
+        $jwt=JWT::encode($token, $key);
+        
+        $jsonsend = array(
+            /*   "username" => $id,
+             "log"=>$log,
+        "authority"=>$authority, */
+            "jwt"=>$jwt
+        );
+        $jsonsend=json_encode($jsonsend);
+        echo $jsonsend;
+    
+    }
+    
+    
+    
+    public function forget_password(){
          //获取客户端发送的json
-        $json=json_decode($_POST);
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+
         $arr=$json;
         $id=$arr->username;//用户名为学号，也是数据库中的ID
         $mailbox=$arr->mailbox;
@@ -163,15 +203,14 @@ class IndexController extends Controller {
         else if($res[0]['mailbox']==null)
             $log="没有用户邮箱信息，请用邮箱发邮件给管理员";
         else{
-            $log="已发送新密码到邮箱，请及时修改密码";
+            $log="ok";
             $psw=$this->createRandomStr(10);
             $sql="update ".__PREFIX__."user set psw=".$psw." where id=".$id;
             //发送邮件
             $log=$this->sendmail($res[0]['mailbox'], $psw);
         }
         $jsonsend= array(
-            "username" => $id,
-            "log"=>$log,
+            “status”=>$log,
         );
        
         $jsonsend=json_encode($jsonsend);
@@ -212,34 +251,11 @@ class IndexController extends Controller {
             return $log;
         
         }
-    
-    
-    
-    public function index(){
-      // echo __ROOT__;
-        $this->display("./Background/Home/phyman-1/index.html");
+        public function index(){
+            // echo __ROOT__;
+            $this->display("./Background/Home/phyman-1/index.html");
         
         
-    }
-    public function test(){
-        echo "111";
-    }
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        }
 }
 ?>
