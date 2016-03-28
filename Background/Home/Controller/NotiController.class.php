@@ -15,111 +15,78 @@ class NotiController extends Controller {
     
     
     public function getList(){
-     /*    $key="access_token";
-        $jwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHltYW4iLCJhdWQiOiIyMDE1MjIwNDA4NDAiLCJleHAiOiIyMDE2MDIyMTIxNDQyNCIsImlhdCI6IjIwMTYwMjIxMjA0NDI0In0.ZD0tG5KNu-WJHmpeWXJNcMNjIbBop0g-WkrRYTx3cNQ";
-        $jwt=JWT::decode($jwt,$key,array('HS256'));
-         */
-        /* $sqlplus="order by date desc";
-        $sql="select id,title,date,grade from ".__PREFIX__."article ".$sqlplus;
-        $Model=new Model();
-        $res= $Model->query($sql);
-        //print_r($res);
-        $resjson=json_encode($res);
-        $jsonsend=array(
-            "username" => $jwt->username,
-            "list"=>$resjson,
-            "access_token"=>$json->access_token
-        );
-        print_r($jsonsend);
-        die; */
+    
         //获取客户端发送的json
-        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+      /*   $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
-        $jwt=$json->access_token;
-        if($json->access_token==null){
+        $jwt=$json->jwt;
+        if($json->jwt==null){
             $log="无access_token";
         }else{
             $jwt=JWT::decode($jwt,$key,array('HS256'));
             $timenow=date("YmdHis",strtotime('now'));
-            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
+            if(!($timenow<$jwt->exp&&$timenow>$jwt->iat)){
                 $log="超时或名称不对称";
             }
         }
-        
-        
-        //$arr=$json;
-      //  $username=$arr->username;//用户名为学号，也是数据库中的ID
-       /*  $page=$arr->page;//显示列表的第几页（为14位年月日时分秒）
-        $pagesize=$arr->pagesize;//显示列表时每一页显示几条
-        $title=$arr->title;//按照文章标题选取文章；
-        $uid=$arr->writer;//按照作者选取文章；
-        $date=$arr->date;//按照文章的发表日期选取文章
-        $tid=$arr->tid;//按照文章的类型选取文章；
-        $grade=$arr->grade;//按照查看该文章的年级选取文章 */
-        
-        //对提取的jwt数据进行进一次选取；
-       // $start=($page-1)*$pagesize;
+         */
         $sqlplus="order by date desc";
         
-       /*  $sqloftitle="select * from ".__PREFIX__."article where title like \"%$title%\" ".$sqlplus;
-        $sqlofdate="select * from ".__PREFIX__."article where date like \"%$date%\" ".$sqlplus;//注意此处需要将时间设置Y-m-d
-        $sqlofuid="select * from  ".__PREFIX__."article where uid=(
-                   select id from ".__PREFIX__."user where name= \"%$uid%\") ".$sqlplus;//此处的uid都是中文的utf-8(编辑和管理员的名字互相都不能一样)
-        $sqloftid="select * from  ".__PREFIX__."article where tid=(
-                   select id from ".__PREFIX__."type where name= \"%$tid%\") ".$sqlplus;//此处的tid都是中文的utf-8(种类的名字互相也都不能一样)
-        $sqlofgrade="select * from ".__PREFIX__."article where grade=(
-                   select id from ".__PREFIX__."grade where name= \"%$grade%\") ".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样) */
-        $sql="select id,title,date,grade from ".__PREFIX__."article ".$sqlplus;
+        $sql="select id,title,date from ".__PREFIX__."article ".$sqlplus;
         $Model=new Model();
         $res= $Model->query($sql);
-        //die;
-        //根据用户设置的条件筛选文章
-      /*   $Model=new Model();
-        if($title!=null)
-            $res= $Model->query($sqloftitle);
-        else if($date!=null){
-            $res=$Model->query($sqlofdate);
-        }else if($uid!=null){
-            $res= $Model->query($sqlofuid);
-        }else if($tid!=null){
-            $res= $Model->query($sqloftid);
-        }else if($grade!=null){
-            $res= $Model->query($sqlofgrade);
-        }else{
-            $res= $Model->query($sql);
-        }
-         */
         $resjson=json_encode($res);
   
-        $jsonsend=array(
+       /*  $jsonsend=array(
             "username" => $json->username,
             "list"=>$resjson,
             "log"=>$log,
-            "access_token"=>$json->access_token
-        );
+            "jwt"=>$json->jwt
+        ); */
          
-        /**
-         * IMPORTANT:
-         * You must specify supported algorithms for your application. See
-         * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
-         * for a list of spec-compliant algorithms.
-        */
         
-        $json=json_encode($jsonsend);
+        $json=json_encode($resjson);
         //echo $json;
         echo $json;
-       // $this->display("./Background/Home/phyman-1/index.html");
-       // $this->assign($json);
     }
    
+    public function deleteOne(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $key="access_token";
+        $jwt=$json->jwt;
+        if($json->jwt==null){
+            $log="无jwt";
+        }else{
+            $jwt=JWT::decode($jwt,$key,array('HS256'));
+            $timenow=date("YmdHis",strtotime('now'));
+            if(!($timenow<$jwt->exp&&$timenow>$jwt->iat)){
+                $log="超时或名称不对称";
+            }
+        }
+        $id=$json->id;
+        $Model= new Model();
+        $sql= "delete from ".__PREFIX__."article where id =".$id.";";
+        $Model->query($sql);
+        echo $sql;
+        $sql= "drop table ".__PREFIX__."article_user".$id.";";
+        $Model->query($sql);
+    
+        echo $sql;
+    
+        $jsonsend=array(
+            "status"=>"ok"
+        );
+        $jsonsend=json_encode($jsonsend);
+        echo $jsonsend;
+    }
     
     //获取文章内容
     public function getNotiDetail(){
         //获取客户端发送的json
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
-        $jwt=$json->access_token;
-        if($json->access_token==null){
+        $jwt=$json->jwt;
+        if($json->jwt==null){
             $log="无access_token";
         }else{
             $jwt=JWT::decode($jwt,$key,array('HS256'));
@@ -168,21 +135,6 @@ class NotiController extends Controller {
             $res= $Model->query($sql);
             $article=json_encode($res);
            
-            /* 如果存储方式为html本地文件
-             * $file_path=__DIRART__.$res[0]['body'];
-             //  echo $file_path;
-             //判断是否有这个文件
-             if(file_exists($file_path)){
-             if($fp=fopen($file_path,"a+")){
-             //读取文件
-             $article=fread($fp,filesize($file_path));
-             }else{
-             echo "文件打不开";
-             }
-             }else{
-             echo "没有这个文件";
-             }
-            fclose($fp); */
         
             if($article!=null)
                 $log=1;
@@ -208,6 +160,31 @@ class NotiController extends Controller {
         $sql="update ".__PREFIX__."article_user".$articleid." set checken=".$check." where id=".$userid;
         $Model->query($sql);
     
+    }
+    
+    
+    public function checkeduser(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $key="access_token";
+        
+        $articleid=$json->id;
+        
+        if($json->jwt==null){
+            $log="无access_token";
+        }else{
+            $jwt=JWT::decode($jwt,$key,array('HS256'));
+            $timenow=date("YmdHis",strtotime('now'));
+            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
+                $log="超时或名称不对称";}
+        }
+
+        $Model=new Model();
+        $sql="select id,name,grade,class from ".__PREFIX__."article_user".$articleid;
+        $res=$Model->query($sql);
+        $list=$res[0];
+        
+        
+        
     }
     public function  getExcel(){
         $json=json_decode($_POST);
