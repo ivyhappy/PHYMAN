@@ -180,7 +180,7 @@ class VoteController extends Controller {
             else{
                 $suc=0;
             }
-            $sql="select title,body from ".__PREFIX__."vote where id=".$vote;
+            $sql="select title,type,body from ".__PREFIX__."vote where id=".$vote;
             $res=$Model->query($sql);
             $title=$res[0]['title'];
             $content=$res[0]['body']; 
@@ -190,6 +190,7 @@ class VoteController extends Controller {
                 'username'=>$username,
                 'suc'=>$suc,
                 'title'=>$title,
+                'type'=>$res[0]['type'],
                 'content'=>$content,
                 'choose'=>$res[0]['choose'],
                 'options'=>$optofhtml,
