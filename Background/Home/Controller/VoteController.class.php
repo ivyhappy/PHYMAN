@@ -1,10 +1,10 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Common\Controller\AjaxController;
 use Think\Model;
 require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
-class VoteController extends Controller {
+class VoteController extends AjaxController {
     
     public function getList(){//获取文章列表
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
@@ -18,32 +18,7 @@ class VoteController extends Controller {
             if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
                 $log="超时或名称不对称";
             }
-        }/* 
-        
-        
-        
-        
-          //获取客户端发送的json
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
         }
-        $arr=$json;
-        $username=$arr->username;//用户名为学号，也是数据库中的ID
-        $page=$arr->page;//显示列表的第几页（为14位年月日时分秒）
-        $pagesize=$arr->pagesize;//显示列表时每一页显示几条
-        $title=$arr->title;//按照文章标题选取文章；
-        $uid=$arr->writer;//按照作者选取文章；
-        $time=date("Y-m-d H:i:s",strtotime($arr->time));
-        
-        $tid=$arr->tid;//按照文章的类型选取文章；
-        $grade=$arr->grade;//按照查看该文章的年级选取文章 */
-        
-        
-       // $start=($page-1)*$pagesize;
         $sqlplus="order by begtime desc";// LIMIT $start,$pagesize";
         //对提取的jwt数据进行进一次选取；
         /* $sqloftitle="select * from ".__PREFIX__."view_vote where title like \"%$title%\" ".$sqlplus;
@@ -85,9 +60,7 @@ class VoteController extends Controller {
     }
     public function getVoteResult(){
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->access_token;
-        if($json->access_token==null){
+       /*  if($json->access_token==null){
             $log="无access_token";
         }else{
             $jwt=JWT::decode($jwt,$key,array('HS256'));
@@ -95,10 +68,9 @@ class VoteController extends Controller {
             if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
                 $log="超时或名称不对称";
             }
-        }
+        } */
         
         $arr=$json;
-        $username = $arr->username;//用户名为学号，也是数据库中的ID
         $vote = $arr->id;//文章的id号
         
             $Model=new Model();
@@ -111,7 +83,6 @@ class VoteController extends Controller {
             $content=$res[0]['body'];
         
             $jsonsend=array(
-                'username'=>$username,
                 'title'=>$title,
                 'content'=>$content,
                 'result'=>$optofhtml,
@@ -203,44 +174,21 @@ class VoteController extends Controller {
     }
     public function userVote(){
     $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->access_token;
-        if($json->access_token==null){
-            $log="无access_token";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        }
         $choose=$json->choose;
         $count=count($choose);
         $option='';
         for($i=0;$i<$count;$i++){
             $option=$option.$choose[$i]->id.";";
         }
-        
-       /*  //获取客户端发送的json
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        }
-         */
         $arr=$json;
         $username=$arr->username;//用户名为学号，也是数据库中的ID
         $voteid=$arr->id;//投票ID号（为14位年月日时分秒）
  //       $option=$arr->option;//那几个选项按照;划分
-    
         $Model=new Model();
-        $sql="update ".__PREFIX__."vote_user".$voteid." set option= ".$option." where id=".$username;
+        $sql="update ".__PREFIX__."vote_user".$voteid." set options= '".$option."' where id=".$username;
         $Model->query($sql);
     
-        $sql="update  ".__PREFIX__."vote_user".$voteid." set choose=1 where id= ".$username;;
+        $sql="update ".__PREFIX__."vote_user".$voteid." set choose=1 where id= ".$username;;
         $Model->query($sql);
          
         //投票结果
@@ -322,7 +270,7 @@ class VoteController extends Controller {
             $id=$res[$i]['id'];
             $content=$res[$i]['content'];
         
-            $sql="select count(*) from ".__PREFIX__."vote_user".$voteid." where option like \"%$id%\"";
+            $sql="select count(*) from ".__PREFIX__."vote_user".$voteid." where options like \"%$id%\"";
             $temp=$Model->query($sql);
             $num=$temp[0]['count(*)'];
             $s=array(

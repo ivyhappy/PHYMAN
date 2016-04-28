@@ -2,7 +2,7 @@
 require(dirname(__FILE__).'/MessageBuilder.php');
 
 Class Pusher {
-    const MESSAGE_SERVER_HOST='http://127.0.0.1:2121';
+    const MESSAGE_SERVER_HOST='http://119.29.6.121:2121';
 
     public static function push($message) {
         $ch = curl_init ();

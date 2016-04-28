@@ -1,6 +1,6 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Common\Controller\AjaxController;
 use Think\Model;
 use Firebase\JWT\JWT;
 
@@ -11,7 +11,7 @@ require './ThinkPHP/Library/Vendor/Classes/PHPExcel.php';
 import(Vendor.Classes.Writer.Excel5.php);
 import(Vendor.Classes.IOFactory.php);
 
-class QaController extends Controller {
+class QaController extends AjaxController {
     public function getList(){
      /*    $key="access_token";
         $jwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHltYW4iLCJhdWQiOiIyMDE1MjIwNDA4NDAiLCJleHAiOiIyMDE2MDIyMTIxNDQyNCIsImlhdCI6IjIwMTYwMjIxMjA0NDI0In0.ZD0tG5KNu-WJHmpeWXJNcMNjIbBop0g-WkrRYTx3cNQ";

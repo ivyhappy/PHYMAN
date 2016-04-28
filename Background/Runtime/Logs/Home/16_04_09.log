@@ -1,0 +1,809 @@
+[ 2016-04-09T20:54:37+08:00 ] ::1 /PHYMAN/index.php/Home/Admin/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048053s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc LIMIT 1 [ RunTime:0.212533s ]
+SQL: select id,title,begtime from phyman_vote order by begtime desc LIMIT 1 [ RunTime:0.049377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044169s ]
+
+[ 2016-04-09T20:56:33+08:00 ] ::1 /PHYMAN/index.php/Home/Admin/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000320s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc LIMIT 1 [ RunTime:0.000760s ]
+SQL: select id,title,begtime from phyman_vote order by begtime desc LIMIT 1 [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002751s ]
+
+[ 2016-04-09T20:59:57+08:00 ] ::1 /PHYMAN/index.php/Home/Admin/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002465s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc LIMIT 1 [ RunTime:0.000580s ]
+SQL: select id,title,begtime from phyman_vote order by begtime desc LIMIT 1 [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003297s ]
+
+[ 2016-04-09T21:03:26+08:00 ] ::1 /PHYMAN/index.php/Home/Admin/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003221s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,content,date from phyman_article order by date desc LIMIT 1 [ RunTime:0.000600s ]
+ERR: 1054:Unknown column 'content' in 'field list'
+ [ SQL语句 ] : select id,title,content,date from phyman_article order by date desc LIMIT 1
+SQL: select id,title,begtime as date from phyman_vote order by begtime desc LIMIT 1 [ RunTime:0.047964s ]
+NOTIC: [8] Undefined index: begtime D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 201 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2016-04-09T21:12:37+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009245s ]
+
+[ 2016-04-09T21:12:47+08:00 ] ::1 /PHYMAN/index.php/Home/Noti/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003689s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003249s ]
+
+[ 2016-04-09T21:13:37+08:00 ] ::1 /PHYMAN/index.php/Home/Noti/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003128s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002765s ]
+
+[ 2016-04-09T21:15:28+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000623s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003198s ]
+
+[ 2016-04-09T21:15:29+08:00 ] ::1 /PHYMAN/index.php/Home/Noti/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000196s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003794s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003273s ]
+
+[ 2016-04-09T22:18:49+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000442s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003802s ]
+
+[ 2016-04-09T22:21:10+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2016-04-09T22:21:20+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000402s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect():  D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-04-09T22:22:26+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002498s ]
+
+[ 2016-04-09T22:22:33+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2016-04-09T22:22:40+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002206s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect():  D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-04-09T22:39:53+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017548s ]
+
+[ 2016-04-09T22:40:59+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003326s ]
+
+[ 2016-04-09T22:41:51+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000681s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001813s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002884s ]
+
+[ 2016-04-09T22:44:18+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000813s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003047s ]
+
+[ 2016-04-09T22:45:47+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002873s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000728s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002521s ]
+
+[ 2016-04-09T22:46:26+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002973s ]
+
+[ 2016-04-09T22:47:23+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000505s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002413s ]
+
+[ 2016-04-09T22:48:21+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002735s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000464s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003073s ]
+
+[ 2016-04-09T22:50:31+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002476s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005130s ]
+
+[ 2016-04-09T23:07:44+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000528s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001476s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002910s ]
+
+[ 2016-04-09T23:10:34+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002898s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002844s ]
+
+[ 2016-04-09T23:11:44+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000346s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000715s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003337s ]
+
+[ 2016-04-09T23:13:04+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000857s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002577s ]
+
+[ 2016-04-09T23:17:32+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001371s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002633s ]
+
+[ 2016-04-09T23:19:04+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003750s ]
+
+[ 2016-04-09T23:21:06+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002574s ]
+
+[ 2016-04-09T23:21:19+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003141s ]
+
+[ 2016-04-09T23:22:26+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000760s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002650s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003537s ]
+
+[ 2016-04-09T23:23:21+08:00 ] 127.0.0.1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002577s ]
+
+[ 2016-04-09T23:25:14+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000408s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000447s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001517s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002605s ]
+
+[ 2016-04-09T23:29:43+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002715s ]
+
+[ 2016-04-09T23:29:48+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001851s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2016-04-09T23:37:58+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002724s ]
+
+[ 2016-04-09T23:39:47+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000326s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002778s ]
+
+[ 2016-04-09T23:39:59+08:00 ] ::1 /PHYMAN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002752s ]
+

@@ -81,9 +81,9 @@ class JWT
         if (empty(self::$supported_algs[$header->alg])) {
             throw new DomainException('Algorithm not supported');
         }
-        if (!is_array($allowed_algs) || !in_array($header->alg, $allowed_algs)) {
+       /*  if (!is_array($allowed_algs) || !in_array($header->alg, $allowed_algs)) {
             throw new DomainException('Algorithm not allowed');
-        }
+        } */
         if (is_array($key) || $key instanceof \ArrayAccess) {
             if (isset($header->kid)) {
                 $key = $key[$header->kid];

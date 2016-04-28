@@ -1,12 +1,12 @@
 <?php
+
 namespace Home\Controller;
-//namespace Home\Controller\Article;
-use Think\Controller;
+
+use Common\Controller\AjaxController;
 use Think\Model;
 use Firebase\JWT\JWT;
 require './ThinkPHP/Library/Vendor/autoload.php';
-
-class IndexController extends Controller {
+class IndexController extends AjaxController {
     public function login(){
         //获取来自客户端的jwt
         //$json=json_decode($_POST);
@@ -14,6 +14,8 @@ class IndexController extends Controller {
         $username=$json->username;
         $psw=$json->password;
         
+       /*  $username="201522040840";
+        $psw="12345678"; */
         
         //从数据库中读取用户的password和权限
         $Model=new Model();
@@ -39,28 +41,33 @@ class IndexController extends Controller {
         $exptime=date("YmdHis",strtotime("$datetime+1hours"));
         $token=array(
             "iss"=>"phyman",
-            "aud"=>$username,
+            "id"=>$username,
             "exp"=>$exptime,
             "iat"=>$datetime,
             "name" => $name,
             "uid" => $username,
-            "viewlevel"=>$grade,
+            "viewlevel"=>"1",
             "permission"=>$authority
         );
-        $key="access_token";
+        $key="accss_token";
+        $token=json_encode($token);
         $jwt=JWT::encode($token, $key);
         
         //生成发送给客户端的json信息
         
         $jsonsend = array(
-            
+            "username" =>$username,
+            "permission"=>$authority,
             "jwt"=>$jwt
         );
         
         $jsonsend=json_encode($jsonsend);
-        echo $jsonsend;
-      //  $this->display("./Background/Home/phyman-1/index.html");
         
+        echo $jsonsend;
+        
+        /* $jwt=JWT::decode($jwt,$key,HS256);
+        
+        print_r($jwt); */
     }
     public function register(){
          //获取客户端发送的json
@@ -131,9 +138,10 @@ class IndexController extends Controller {
             $jwt=JWT::encode($token, $key);
             
             $jsonsend = array(
-              /*   "username" => $id,
-                "log"=>$log,
-                "authority"=>$authority, */
+               "name" => $name,
+                "uid" => $id,
+                "viewlevel"=>$grade,
+                "permission"=>$authority,
                 "jwt"=>$jwt
             );
         }
@@ -147,11 +155,6 @@ class IndexController extends Controller {
     public function reset_password(){
         //获取客户端发送的json
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $jwt=$json->jwt;
-        $key="access_token";
-        
-        $jwt=JWT::decode($jwt,$key,array('HS256'));
-        
         $id=$jwt->uid;
         $psw=$json->new_password;
         
@@ -163,6 +166,9 @@ class IndexController extends Controller {
             "aud"=>$id,
             "exp"=>$jwt->exptime,
             "iat"=>$jwt->datetime,
+            "Access-Control-Allow-Origin"=>'*',
+            
+            
             "name" => $jwt->name,
             "uid" => $id,
             "viewlevel"=>$jwt->grade,
@@ -172,9 +178,10 @@ class IndexController extends Controller {
         $jwt=JWT::encode($token, $key);
         
         $jsonsend = array(
-            /*   "username" => $id,
-             "log"=>$log,
-        "authority"=>$authority, */
+             "name" => $jwt->name,
+            "uid" => $id,
+            "viewlevel"=>$jwt->grade,
+            "permission"=>$jwt->authority,
             "jwt"=>$jwt
         );
         $jsonsend=json_encode($jsonsend);
@@ -254,6 +261,7 @@ class IndexController extends Controller {
         public function index(){
             // echo __ROOT__;
             $this->display("./Background/Home/phyman-1/index.html");
+           // $this->display();
         
         
         }

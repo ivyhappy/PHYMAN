@@ -1,10 +1,10 @@
 <?php
 namespace Home\Controller;
 //namespace Home\Controller\Article;
-use Think\Controller;
+
 use Think\Model;
 use Firebase\JWT\JWT;
-
+use Common\Controller\AjaxController;
 require './ThinkPHP/Library/Vendor/autoload.php';
 require './ThinkPHP/Library/Vendor/Classes/PHPExcel.php';
 require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
@@ -12,7 +12,7 @@ require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
 import(Vendor.Classes.Writer.Excel5.php);
 import(Vendor.Classes.IOFactory.php);
 
-class AdminController extends Controller {
+class AdminController extends AjaxController {
    public function addUser(){
        //获取客户端发送的json
        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
@@ -96,11 +96,11 @@ class AdminController extends Controller {
             }
              
     
-        }
+     }
         
         
        //读取用户文件然后插入数据库 
-        public function uploadFile($filetmpname){
+   public function uploadFile($filetmpname){
             Vendor('Classes.PHPExcel');
             $objPHPExcel = \PHPExcel_IOFactory::load($filetmpname);
             $arrExcel = $objPHPExcel->getSheet(0)->toArray();
@@ -123,34 +123,21 @@ class AdminController extends Controller {
             $countids=count($fields);
             for($i=0;$i<$countids;$i++){
                 $m->add($fields[$i]);
-                echo $m->getLastSql();
             }
         }
     
     public function newNoti(){
         //获取客户端发送的json
-        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->jwt;
-        if($json->jwt==null){
-            $log="无jwt";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        }
-    
-        $arr=$json;
-        $uid=201522040840;$jwt->aud;//用户名为学号，也是数据库中的ID
+        $arr=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        
+        $uid=$arr->uid;//用户名为学号，也是数据库中的ID
         //$id=$arr->id;//文章ID号（为14位年月日时分秒）
         $title=$arr->title;//$arr->noti->title;//文章标题
         //$uid=$arr->username;//创建该文章的用户ID
        // $date=$arr->date;//创建文章的年月日时分秒
         //$tid=$arr->tid;//
-        $bodyofhtml=$arr->body;//$arr->noti->content;//文章的内容（保存为html）
-       $grade="研一";//$arr->noti->viewlevel;//可查看该文章的年级
+        $bodyofhtml=$arr->content;//$arr->noti->content;//文章的内容（保存为html）
+        $grade="研一;研二;研三";//$arr->noti->viewlevel;//可查看该文章的年级
     
     
         //对时间进行处理；
@@ -179,14 +166,14 @@ class AdminController extends Controller {
         );
     
         $json=json_encode($jsonsend);
-        echo $json;
+       
         //向数据库中增加表
         $this::insertNotiuser($id);
         $config = array(
             'from' => '123',
             'to' => '',
             'content' => $title,
-            'viewlevel' => $grade,
+            'viewlevel' => '1',
             'action' => '1');
         
         vendor("messagePush-master.Pusher");
@@ -197,19 +184,48 @@ class AdminController extends Controller {
         
     
     }
-   
+    public function message(){
+        
+        $Model=new Model();
+       
+        $sqlplus="order by date desc LIMIT 1";
+        $sql="select id,title,content,date from ".__PREFIX__."article ".$sqlplus;
+        $noti= $Model->query($sql);
+        
+        
+        $sqlplus="order by begtime desc LIMIT 1";// LIMIT $start,$pagesize";
+        $sql="select id,title,begtime as date from ".__PREFIX__."vote ".$sqlplus;
+        $vote= $Model->query($sql);
+
+        if($noti[0]['date']<$vote[0]['begtime']){
+            $type="vote";
+            $message=json_encode($vote[0]);
+        }
+        else{ 
+            $type="noti";
+            $message=json_encode($noti[0]);
+        }
+        
+        $jsonsend=array(
+            "message"=>$message,
+            "type"=>$type
+        );
+        $json=json_encode($jsonsend);
+        echo $json;
+                
+        
+        
+    }
     public function insertNotiuser($articleid){
         
         $Model=new Model();
-        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id)) ;";
+        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id));";
         // $sql="create table ".__PREFIX__."article_user".$articleid."(id bigint(12),name varchar(10),grade varchar(10),check int(2) default 0 not null,primary key (id));";
         $Model->query($sql);
-        echo $sql."<br>";
         $sql="select grade from ".__PREFIX__."article where id=".$articleid;
         $res=$Model->query($sql);
         $grade=explode(";",$res[0]['grade']);
         $count=count($grade)-1;
-        print_r($grade);
         for($i=0;$i<$count;$i++){
             $sql="insert into ".__PREFIX__."article_user".$articleid.
             "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";

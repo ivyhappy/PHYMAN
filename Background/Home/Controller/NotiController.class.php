@@ -1,6 +1,6 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Common\Controller\AjaxController;
 use Think\Model;
 use Firebase\JWT\JWT;
 
@@ -11,25 +11,10 @@ require './ThinkPHP/Library/Vendor/Classes/PHPExcel.php';
 import(Vendor.Classes.Writer.Excel5.php);
 import(Vendor.Classes.IOFactory.php);
 
-class NotiController extends Controller {
+class NotiController extends AjaxController {
     
     
     public function getList(){
-    
-        //获取客户端发送的json
-      /*   $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->jwt;
-        if($json->jwt==null){
-            $log="无access_token";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        }
-         */
         $sqlplus="order by date desc";
         
         $sql="select id,title,date from ".__PREFIX__."article ".$sqlplus;
@@ -37,32 +22,19 @@ class NotiController extends Controller {
         $res= $Model->query($sql);
         $resjson=json_encode($res);
   
-       /*  $jsonsend=array(
-            "username" => $json->username,
+        $jsonsend=array(
+            "username"=>"",
             "list"=>$resjson,
-            "log"=>$log,
-            "jwt"=>$json->jwt
-        ); */
+        );
          
         
-        $json=json_encode($resjson);
+        $json=json_encode($jsonsend);
         //echo $json;
         echo $json;
     }
    
     public function deleteOne(){
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->jwt;
-        if($json->jwt==null){
-            $log="无jwt";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        }
         $id=$json->id;
         $Model= new Model();
         $sql= "delete from ".__PREFIX__."article where id =".$id.";";
@@ -83,36 +55,13 @@ class NotiController extends Controller {
     //获取文章内容
     public function getNotiDetail(){
         //获取客户端发送的json
-        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $key="access_token";
-        $jwt=$json->jwt;
-        if($json->jwt==null){
-            $log="无access_token";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        }
+        $arr=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         
-        /* 
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->access_token, $key, array('HS256'));
-        
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        } 
-        $arr=$json;
-        $username = $arr->username;//用户名为学号，也是数据库中的ID
-        $art = $arr->noti;//文章的id号
-        *
-        */
-        $arr=$json;
-        $username = $arr->username;//用户名为学号，也是数据库中的ID
         $art = $arr->id;//文章的id号
+        $username=$arr->userid;
+        
+        
+        $this::articlecheck($username,$art);
         if($art==null){
             $res=array(
                 "id"=>"",
@@ -121,15 +70,15 @@ class NotiController extends Controller {
             );
             $article=json_encode($res);
             $jsonsend=array(
-                'username'=>$username,
                 'log'=>"未读取到文章id",
                 'detail'=>$article
             );
         }else{
             //对提取的jwt数据进行进一次选取；
-        
-            $sql="select id,title,body,date,grade from ".__PREFIX__."article where id=".$art;
-        
+            $sql="select id,title,body,date from ".__PREFIX__."article where id=".$art;
+            
+           /*  $sql="select id,title,body,date,grade from ".__PREFIX__."article where id=".$art;
+         */
             //根据用户点击选取文章
             $Model=new Model();
             $res= $Model->query($sql);
@@ -141,8 +90,8 @@ class NotiController extends Controller {
             else $log=0;
         
             $jsonsend=array(
-                'username'=>$username,
-                'log'=>$log,
+                'title'=>$res[0]['title'],
+                'content'=>$res[0]['body'],
                 'detail'=>$article
             );
         }
@@ -151,7 +100,7 @@ class NotiController extends Controller {
       //  $this->display("./Background/Home/phyman-1/index.html");
         echo $json;
         
-        $this::articlecheck($username,$art);
+       
     
     }
     public function articlecheck($userid,$articleid){
@@ -163,30 +112,38 @@ class NotiController extends Controller {
     }
     
     
-    public function checkeduser(){
+    public function stat(){
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
         
         $articleid=$json->id;
         
-        if($json->jwt==null){
-            $log="无access_token";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";}
-        }
 
         $Model=new Model();
-        $sql="select id,name,grade,class from ".__PREFIX__."article_user".$articleid;
+        $sql="select id,name,checken from ".__PREFIX__."article_user".$articleid." where checken=1";
         $res=$Model->query($sql);
-        $list=$res[0];
+        $read=$res;
+        
+        $read=json_encode($read);
+        
+        $sql="select id,name,checken from ".__PREFIX__."article_user".$articleid." where checken=0";
+        $res=$Model->query($sql);
+        $unread=$res;
+        $unread=json_encode($unread);
+        
+        
+        
+        $jsonsend=array(
+            'unread'=>$unread,
+            'read'=>$read
+        );
+        $json=json_encode($jsonsend);
+        echo $json;
         
         
         
     }
-    public function  getExcel(){
+   /*  public function  getExcel(){
         $json=json_decode($_POST);
         $key="access_token";
     
@@ -195,7 +152,7 @@ class NotiController extends Controller {
         $art=$arr->article;//文章id号
         $table=__PREFIX__."article_user".$art;
         $this::expUser($table);
-    }
+    } */
     public function exportExcel($expTitle,$expCellName,$expTableData){
         echo 'exportExcel';
         //  $xlsTitle = iconv('utf-8', 'utf-8', $expTitle);//文件名称
