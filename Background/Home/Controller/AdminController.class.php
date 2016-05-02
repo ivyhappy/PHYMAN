@@ -13,6 +13,81 @@ import(Vendor.Classes.Writer.Excel5.php);
 import(Vendor.Classes.IOFactory.php);
 
 class AdminController extends AjaxController {
+    
+    public function getScanList(){
+        $sqlplus="order by id desc";
+    
+        $sql="select * from ".__PREFIX__."scans ".$sqlplus;
+        $Model=new Model();
+        $res= $Model->query($sql);
+        $resjson=json_encode($res);
+    
+        $jsonsend=array(
+           
+            "list"=>$resjson,
+        );
+        $json=json_encode($jsonsend);
+        //echo $json;
+        echo $json;
+    }
+    
+    public function getScanDetail(){
+        //获取客户端发送的json
+        $arr=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $username=$arr->username;
+        $sql="select count from ".__PREFIX__."scans where id=".$username;
+        $Model=new Model();
+        $res= $Model->query($sql);
+        $count=$res[0]['count'];
+        $sql="select scanname from ".__PREFIX__."scan where userid =".$username;
+        $res= $Model->query($sql);
+       
+        $scans=json_encode($res);
+        
+        $jsonsend=array(
+            "username"=>$username,
+            "count"=>$count,
+            "scans"=>$scans
+        );
+        $json=json_encode($jsonsend);
+        echo $json;
+    }
+   public function updatescan(){
+       $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+      /*  $key="access_token";
+       $jwt=$json->access_token;
+       
+       if($json->access_token==null){
+           $log="无access_token";
+       }else{
+           $jwt=JWT::decode($jwt,$key,array('HS256'));
+           $timenow=date("Y-m-d",strtotime('now'));
+           if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
+               $log="超时或名称不对称";
+           }
+       } */
+       $Model= new Model();
+       
+       $title=$json->title;
+       $ids=$json->updated;
+       $count=count($ids);
+       
+       $sql="select uuid_short();";
+       $res=$Model->query($sql);
+       $scanid=$res[0]['uuid_short()'];
+      
+       
+       for($i=0;$i<$count;$i++){
+           $userid=$ids[$i]->id;
+           $username=$ids[$i]->name;
+           
+           $sql="insert into ".__PREFIX__."scan (userid,username,scanid,scanname) values ($userid,'$username',$scanid,'$title');";
+           $Model->query($sql);
+           $Model->getLastSql();
+       }
+      
+   }
+   
    public function addUser(){
        //获取客户端发送的json
        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
@@ -55,8 +130,6 @@ class AdminController extends AjaxController {
            $suc=0;
        
        
-       $resjson=json_encode($res);
-       
        $jsonsend=array(
            "username" => $json->username,
            "suc"=>$suc,
@@ -67,9 +140,8 @@ class AdminController extends AjaxController {
     
     //上传用户名册文件
    public function impUser(){
-        /* echo "impuser";
-        die; */
         if (!empty($_FILES)) {
+            
             import('ORG.Net.UploadFile');
             /* $config=array(
                 'allowExts'=>array('xlsx','xls'),
@@ -81,15 +153,25 @@ class AdminController extends AjaxController {
            $upload->maxSize   =     3145728 ;// 设置附件上传大小
            $upload->rootPath  =     'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
            $upload->savePath  =     ''; // 设置附件上传（子）目录
+           $upload->saveName = 'time';//array('date', '');
            $info   =   $upload->upload();
             if(!$info) {// 上传错误提示错误信息
                  echo $upload->getError();
             } else {
     
             }
+            /* 
+            printf($info);
+            die; */
             vendor("PHPExcel.PHPExcel");
-            $file=$upload->rootPath.$info['import']['savepath'].$info['import']['savename'];
-                $this:: uploadFile($file);
+            $file=$upload->rootPath.$info['file']['savename'];
+            
+          /*   echo $file;
+            echo $info['savename'];
+            print_r($info);
+            die; */
+            $this:: uploadFile($file);
+            
             }else
             {
             echo "请选择上传的文件";
@@ -101,18 +183,18 @@ class AdminController extends AjaxController {
         
        //读取用户文件然后插入数据库 
    public function uploadFile($filetmpname){
+       echo $filetmpname;
             Vendor('Classes.PHPExcel');
             $objPHPExcel = \PHPExcel_IOFactory::load($filetmpname);
             $arrExcel = $objPHPExcel->getSheet(0)->toArray();
-             
             //查询数据库的字段
             $m = M('user');
             $fieldarr = $m->query("describe __PREFIX__user");
-        
             foreach($fieldarr as $v){
                 $field[] = $v['Field'];
         
             }
+            
             //  array_shift($field);//删除自动增长的ID
             //循环给数据字段赋值
             foreach($arrExcel as $v){
@@ -233,26 +315,6 @@ class AdminController extends AjaxController {
         }
     }
     public function newVote(){
-/* 
-
-        $option="111111;22222222;";
-        $contents=explode(";",$option);//此处为投票具体内容
-        $count=count($contents)-1;//总共有多少个投票内容
-        $Model=new Model();
-        $id=333;
-        $suc=1;
-        if($suc==1){
-            for($i=0;$i<$count;$i++){
-                $j=$i+1;
-                $sql="insert into ".__PREFIX__."vote_options (vid,content,id) values ($id,'$contents[$i]',$j)";
-                $Model->query($sql);
-            }
-        }
-        
-        
-        
-        die; */
-        
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $key="access_token";
         $jwt=$json->access_token;
@@ -270,49 +332,32 @@ class AdminController extends AjaxController {
        // $username=$arr->username;//用户名为学号，也是数据库中的ID
         $title=$arr->title;//文章标题
         $uid=$arr->username;//创建该文章的用户ID
-        $date=date("Y-m-d",strtotime('now'));//创建投票开始的年月日时分秒
         $enddate=date("Y-m-d",strtotime($arr->date));//投票截止年月日时分秒
         $body=$arr->content;//
         $type=$arr->type;
-       // $bodyofhtml=$arr->body;//投票的内容（保存为html）
+        $grade=$arr->grades;
         $option=$arr->options;//投票的选项（按照英文字符的;区分如“我的家;在东北;松花江上;”）
-       // $grade=$arr->grade;//可查看该投票的年级
-    
-
-      /*   $title="wulidianzixueyuan";//$arr->title;//文章标题
-        $uid="111111";//$arr->username;//创建该文章的用户ID
-        $date=date("YmdHis",strtotime('now'));//创建投票开始的年月日时分秒
-        $enddate=date("YmdHis",strtotime('now'));//$arr->enddate;//投票截止年月日时分秒
-        $body="20160307wulidianzixueyuan";//$arr->content;//
-        $type="单选";//$arr->type;
-        // $bodyofhtml=$arr->body;//投票的内容（保存为html）
-        $option=$arr->options;//投票的选项（按照英文字符的;区分如“我的家;在东北;松花江上;”）
-        // $grade=$arr->grade;//可查看该投票的年级 */
+       
+       
+        $grades="";
+        for($i=0;$i<count($grade);$i++){
+            $grades=$grades.$grade[$i].";";
+            
+        }
+       
         if($type=="单选")
             $type=0;
-        else $type=1;
+        else if($type=="多选") $type=1;
+        else $type=null;
         
         //对时间进行处理；
-        $datetime= date("Y-m-d",strtotime($date));//获取当前时间
-        $id=$datetime;
-    
-        $datesql= date("Y-m-d",strtotime($datetime));//放入数据库的时间格式
+        $datesql= date("Y-m-d H:i:s",strtotime('now'));//放入数据库的时间格式
         $enddatesql=date("Y-m-d",strtotime($enddate));//放入数据库的时间格式
     
         //对投票选项进行处理
         $contents=explode(";",$option);//此处为投票具体内容
         $count=count($contents)-1;//总共有多少个投票内容
     
-        //将读取到的html文件写入到硬盘文件
-      /*   $file_path=__DIRART__.$datetime.$uid.'vote.html';
-        $body=$datetime.$uid.'vote.html';//html文件的名字
-        $myfile = fopen($file_path, "w") or die("Unable to open file!");
-        if(fwrite($myfile, $bodyofhtml))
-            $suc=1;
-        else
-            $suc=0;
-        fclose($myfile); */
-        //$suc=1保存成功；=0写入失败
     
         //投票信息里加入字段
         //从数据库中获取一个整数型的uuid，并设置为文章的ID号
@@ -321,16 +366,11 @@ class AdminController extends AjaxController {
         $res=$Model->query($sql);
         $id=$res[0]['uuid_short()'];
     
-        /* $sql="insert into __PREFIX__vote(id,title,body,begtime,endtime,uid,tid,options,grade) values (
-         uuid_short(),'$title',$body,'$datesql','$enddatesql',$uid','$tid','$body','$grade')";
-         *///
-        $sql="insert into ". __PREFIX__."vote (id,title,type,body,begtime,endtime,options) values (
-        $id,'$title',$type,'$body','$datesql','$enddatesql','$option')";
-    
-        if($Model->execute($sql))
-            $suc=1;
-        else
-            $suc=0;
+       
+        $sql="insert into ". __PREFIX__."vote (id,title,type,body,begtime,endtime,options,grade) values (
+        $id,'$title',$type,'$body','$datesql','$enddatesql','$option','$grades')";
+        $Model->query($sql);
+        $suc=1;
         
         //投票选项里加入字段
         if($suc==1){

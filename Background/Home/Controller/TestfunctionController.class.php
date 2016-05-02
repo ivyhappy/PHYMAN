@@ -9,6 +9,31 @@ require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
 
 import('Vendor.mail');
 class TestfunctionController extends AjaxController {
+    public function votetest(){
+        $grade=["大三", "研一"];
+        $grades="";
+        for($i=0;$i<count($grade);$i++){
+            $grades=$grades.$grade[$i].";";
+        
+        }
+        echo count($grade);
+        echo $grades;
+    }
+    public function scan(){
+       $sqlplus="order by id desc";
+    
+        $sql="select * from ".__PREFIX__."scans ".$sqlplus;
+        $Model=new Model();
+        $res= $Model->query($sql);
+        $resjson=json_encode($res);
+    
+        $jsonsend=array(
+            "list"=>$resjson,
+        );
+        $json=json_encode($jsonsend);
+        //echo $json;
+        echo $json;
+    }
     public function Vote(){
        
         $option='3;';

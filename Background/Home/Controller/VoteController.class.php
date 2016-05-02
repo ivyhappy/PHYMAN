@@ -107,16 +107,7 @@ class VoteController extends AjaxController {
             }
         }
         
-       //获取客户端发送的json
-       /*  $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        } */
-        
+       
         $arr=$json;
         $username = $arr->username;//用户名为学号，也是数据库中的ID
         $vote = $arr->id;//文章的id号
@@ -137,13 +128,11 @@ class VoteController extends AjaxController {
         }else{
             $Model=new Model();
             //判断用户是否已进行过投票
-            $sql="select choose from ".__PREFIX__."vote_user".$vote." where uid=".$username;
+            $sql="select choose from ".__PREFIX__."vote_user".$vote." where id=".$username;
             $res=$Model->query($sql);
-            if($res[0]['choose']){
-                $optofhtml=$this::getvoteres($vote);//返回投票结果
-            }else{
-                $optofhtml=$this::getvotebody($vote);//返回投票页面
-            }
+            $choose=$res[0]['choose'];
+            $optofhtml=$this::getvotebody($vote);//返回投票页面
+            
             
             if($optofhtml!=null){
                 $suc=1;
@@ -163,7 +152,7 @@ class VoteController extends AjaxController {
                 'title'=>$title,
                 'type'=>$res[0]['type'],
                 'content'=>$content,
-                'choose'=>$res[0]['choose'],
+                'choose'=>$choose,
                 'options'=>$optofhtml,
                 'jwt'=>$arr->jwt
             );
