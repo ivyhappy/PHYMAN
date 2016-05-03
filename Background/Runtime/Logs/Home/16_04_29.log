@@ -1,0 +1,1529 @@
+[ 2016-04-29T21:13:55+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020077s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.013066s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024792s ]
+
+[ 2016-04-29T21:13:55+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.022000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004254s ]
+
+[ 2016-04-29T21:13:59+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000354s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002530s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005157s ]
+
+[ 2016-04-29T21:13:59+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004924s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006696s ]
+
+[ 2016-04-29T21:14:52+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/newNoti?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006786s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 142 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 144 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 146 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 150 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select uuid_short(); [ RunTime:0.042631s ]
+SQL: insert into phyman_article(id,title,uid,date,body,grade)
+        values (96584681255862272,'',,'2016-04-29','','研一;研二;研三') [ RunTime:0.001441s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2016-04-29','','研一;研二;研三')' at line 2
+ [ SQL语句 ] : insert into phyman_article(id,title,uid,date,body,grade)
+        values (96584681255862272,'',,'2016-04-29','','研一;研二;研三')
+NOTIC: [8] Undefined variable: json D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 176 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 176 行.
+SQL: create table phyman_article_user96584681255862272 (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id)); [ RunTime:0.978776s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: select grade from phyman_article where id=96584681255862272 [ RunTime:0.001037s ]
+NOTIC: [8] Undefined offset: 0 D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 238 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008441s ]
+
+[ 2016-04-29T21:14:58+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/newNoti?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022393s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select uuid_short(); [ RunTime:0.000618s ]
+SQL: insert into phyman_article(id,title,uid,date,body,grade)
+        values (96584681255862273,'物理电子学院',201522040840,'2016-04-29','<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>
+<p>物理电子学院</p>','研一;研二;研三') [ RunTime:0.482521s ]
+NOTIC: [8] Undefined variable: json D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 176 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 176 行.
+SQL: create table phyman_article_user96584681255862273 (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id)); [ RunTime:0.514434s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: select grade from phyman_article where id=96584681255862273 [ RunTime:0.000717s ]
+SQL: insert into phyman_article_user96584681255862273(id,name,grade) select id,name,grade from phyman_user where grade like"%研一%"; [ RunTime:0.092460s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: insert into phyman_article_user96584681255862273(id,name,grade) select id,name,grade from phyman_user where grade like"%研二%"; [ RunTime:0.000678s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007140s ]
+
+[ 2016-04-29T21:14:59+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000421s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017733s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004597s ]
+
+[ 2016-04-29T21:14:59+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003846s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004951s ]
+
+[ 2016-04-29T21:15:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getNotiDetail?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000382s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005745s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 58 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 60 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 61 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: update phyman_article_user set checken=1 where id= [ RunTime:0.001007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update phyman_article_user set checken=1 where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006834s ]
+
+[ 2016-04-29T21:15:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/stat?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006406s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 116 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 119 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,name,checken from phyman_article_user where checken=1 [ RunTime:0.000441s ]
+ERR: 1146:Table 'phyman.phyman_article_user' doesn't exist
+ [ SQL语句 ] : select id,name,checken from phyman_article_user where checken=1
+SQL: select id,name,checken from phyman_article_user where checken=0 [ RunTime:0.000645s ]
+ERR: 1146:Table 'phyman.phyman_article_user' doesn't exist
+ [ SQL语句 ] : select id,name,checken from phyman_article_user where checken=0
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005318s ]
+
+[ 2016-04-29T21:15:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getNotiDetail?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000426s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003191s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: update phyman_article_user96584681255862273 set checken=1 where id=201522040840 [ RunTime:0.058799s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: select id,title,body,date from phyman_article where id=96584681255862273 [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003384s ]
+
+[ 2016-04-29T21:15:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/stat?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000392s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006385s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,name,checken from phyman_article_user96584681255862273 where checken=1 [ RunTime:0.000970s ]
+SQL: select id,name,checken from phyman_article_user96584681255862273 where checken=0 [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006414s ]
+
+[ 2016-04-29T21:15:09+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000327s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023013s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,begtime from phyman_vote order by begtime desc [ RunTime:0.002008s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005767s ]
+
+[ 2016-04-29T21:15:09+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000370s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004478s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,begtime from phyman_vote order by begtime desc [ RunTime:0.000800s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007278s ]
+
+[ 2016-04-29T21:15:34+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/newVote?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013450s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 267 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 269 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 270 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 282 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 283 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 285 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 286 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 287 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 289 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select uuid_short(); [ RunTime:0.000598s ]
+SQL: insert into phyman_vote (id,title,type,body,begtime,endtime,options) values (
+        96584681255862274,'',1,'','2016-04-29','1970-01-01','') [ RunTime:0.050955s ]
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 359 行.
+SQL: create table phyman_vote_user96584681255862274 (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,options varchar(255),primary key (id)) ; [ RunTime:0.350984s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: insert into phyman_vote_user96584681255862274(id,name,grade) select id,name,grade from phyman_user [ RunTime:0.060377s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013257s ]
+
+[ 2016-04-29T21:15:35+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/newVote?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004741s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 269 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 270 行.
+NOTIC: [8] Undefined property: stdClass::$username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 283 行.
+NOTIC: [8] Undefined property: stdClass::$content D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 286 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select uuid_short(); [ RunTime:0.000709s ]
+SQL: insert into phyman_vote (id,title,type,body,begtime,endtime,options) values (
+        96584681255862275,'物理电子学院',0,'','2016-04-29','2016-04-30','物理电子学院1;物理电子学院2;物理电子学院3;') [ RunTime:0.061955s ]
+SQL: insert into phyman_vote_options (vid,content,id) values (96584681255862275,'物理电子学院1',1) [ RunTime:0.085370s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: insert into phyman_vote_options (vid,content,id) values (96584681255862275,'物理电子学院2',2) [ RunTime:0.051973s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: insert into phyman_vote_options (vid,content,id) values (96584681255862275,'物理电子学院3',3) [ RunTime:0.029058s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [8] Undefined property: stdClass::$jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 359 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: create table phyman_vote_user96584681255862275 (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,options varchar(255),primary key (id)) ; [ RunTime:0.307658s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: insert into phyman_vote_user96584681255862275(id,name,grade) select id,name,grade from phyman_user [ RunTime:0.039780s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003468s ]
+
+[ 2016-04-29T21:15:35+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,begtime from phyman_vote order by begtime desc [ RunTime:0.001039s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003726s ]
+
+[ 2016-04-29T21:15:35+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005396s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,begtime from phyman_vote order by begtime desc [ RunTime:0.000658s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003097s ]
+
+[ 2016-04-29T21:15:37+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getVoteDetail?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000357s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005807s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 97 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 121 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003265s ]
+
+[ 2016-04-29T21:15:38+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getVoteDetail?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003709s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 99 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 100 行.
+NOTIC: [8] Undefined property: stdClass::$username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 121 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select choose from phyman_vote_user96584681255862275 where uid= [ RunTime:0.000393s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select choose from phyman_vote_user96584681255862275 where uid=
+SQL: select id,content from phyman_vote_options where vid=96584681255862275 [ RunTime:0.000724s ]
+SQL: select title,type,body from phyman_vote where id=96584681255862275 [ RunTime:0.000961s ]
+NOTIC: [8] Undefined index: choose D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 166 行.
+NOTIC: [8] Undefined property: stdClass::$jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 168 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003195s ]
+
+[ 2016-04-29T21:15:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/userVote?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000816s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012883s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 176 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 177 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 184 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 185 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: update phyman_vote_user set options= '' where id= [ RunTime:0.000626s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update phyman_vote_user set options= '' where id=
+SQL: update phyman_vote_user set choose=1 where id=  [ RunTime:0.000676s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update phyman_vote_user set choose=1 where id= 
+SQL: select count(*) from  phyman_vote_user [ RunTime:0.095025s ]
+ERR: 1146:Table 'phyman.phyman_vote_user' doesn't exist
+ [ SQL语句 ] : select count(*) from  phyman_vote_user
+SQL: select count(*) from phyman_vote_options where vid= [ RunTime:0.000635s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select count(*) from phyman_vote_options where vid=
+SQL: select id,content from phyman_vote_options where vid= [ RunTime:0.000762s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select id,content from phyman_vote_options where vid=
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 206 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005638s ]
+
+[ 2016-04-29T21:15:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getVoteResult?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003609s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 62 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select count(*) from  phyman_vote_user [ RunTime:0.000740s ]
+ERR: 1146:Table 'phyman.phyman_vote_user' doesn't exist
+ [ SQL语句 ] : select count(*) from  phyman_vote_user
+SQL: select count(*) from phyman_vote_options where vid= [ RunTime:0.000708s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select count(*) from phyman_vote_options where vid=
+SQL: select id,content from phyman_vote_options where vid= [ RunTime:0.000738s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select id,content from phyman_vote_options where vid=
+SQL: select title,body from phyman_vote where id= [ RunTime:0.000696s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select title,body from phyman_vote where id=
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005437s ]
+
+[ 2016-04-29T21:15:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/getVoteResult?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002889s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select count(*) from  phyman_vote_user96584681255862275 [ RunTime:0.070508s ]
+SQL: select count(*) from phyman_vote_options where vid=96584681255862275 [ RunTime:0.000778s ]
+SQL: select id,content from phyman_vote_options where vid=96584681255862275 [ RunTime:0.000942s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%1%" [ RunTime:0.000755s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%2%" [ RunTime:0.000771s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%3%" [ RunTime:0.001088s ]
+SQL: select title,body from phyman_vote where id=96584681255862275 [ RunTime:0.022026s ]
+NOTIC: [8] Undefined property: stdClass::$jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005166s ]
+
+[ 2016-04-29T21:15:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Vote/userVote?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000370s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007339s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: update phyman_vote_user96584681255862275 set options= '1;' where id=201522040840 [ RunTime:0.098502s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: update phyman_vote_user96584681255862275 set choose=1 where id= 201522040840 [ RunTime:0.031087s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 102 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 73 行.
+SQL: select count(*) from  phyman_vote_user96584681255862275 [ RunTime:0.065747s ]
+SQL: select count(*) from phyman_vote_options where vid=96584681255862275 [ RunTime:0.000767s ]
+SQL: select id,content from phyman_vote_options where vid=96584681255862275 [ RunTime:0.000883s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%1%" [ RunTime:0.001355s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%2%" [ RunTime:0.001264s ]
+SQL: select count(*) from phyman_vote_user96584681255862275 where options like "%3%" [ RunTime:0.021967s ]
+NOTIC: [8] Undefined property: stdClass::$jwt D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 206 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007158s ]
+
+[ 2016-04-29T21:15:50+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Qa/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005772s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 36 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 37 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_qa order by qdate desc [ RunTime:0.190010s ]
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 76 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 79 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004940s ]
+
+[ 2016-04-29T21:15:50+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Qa/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000392s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014007s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 37 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_qa order by qdate desc [ RunTime:0.000662s ]
+NOTIC: [8] Undefined property: stdClass::$username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 76 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 79 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004755s ]
+
+[ 2016-04-29T21:15:51+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Qa/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003003s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 36 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 37 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_qa order by qdate desc [ RunTime:0.000991s ]
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 76 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 79 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004845s ]
+
+[ 2016-04-29T21:15:51+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Qa/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000384s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005798s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 12 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 37 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from phyman_qa order by qdate desc [ RunTime:0.000989s ]
+NOTIC: [8] Undefined property: stdClass::$username D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 76 行.
+NOTIC: [8] Undefined property: stdClass::$access_token D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\QaController.class.php 第 79 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003736s ]
+
+[ 2016-04-29T21:15:55+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006632s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005796s ]
+
+[ 2016-04-29T21:15:56+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004891s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003995s ]
+
+[ 2016-04-29T21:17:04+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011518s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003269s ]
+
+[ 2016-04-29T21:17:04+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002908s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004145s ]
+
+[ 2016-04-29T21:19:56+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000492s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003772s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006759s ]
+
+[ 2016-04-29T21:19:56+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjIxMzU1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjExMzU1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.mdhJI18sjMQL77B67vH7DRUOF-mgQPCnMpIgbPieKKc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002932s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003154s ]
+
+[ 2016-04-29T21:59:52+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016075s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000795s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012487s ]
+
+[ 2016-04-29T21:59:52+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003215s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.072286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004103s ]
+
+[ 2016-04-29T21:59:57+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjI1OTUyXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjE1OTUyXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.HUndah9OF9iV1_Ayg71riktCRmz1c2QdqxaM3qyz1gY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003971s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004693s ]
+
+[ 2016-04-29T21:59:57+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjI1OTUyXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjE1OTUyXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.HUndah9OF9iV1_Ayg71riktCRmz1c2QdqxaM3qyz1gY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000423s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003439s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003279s ]
+
+[ 2016-04-29T22:18:37+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000378s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016530s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000899s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014093s ]
+
+[ 2016-04-29T22:18:38+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011050s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005899s ]
+
+[ 2016-04-29T22:18:46+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMxODM3XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIxODM3XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.J6b1zVsY7cbG_1vrqt2qQl1q4wcpc-fqMnRA7Cli6V0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003525s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003908s ]
+
+[ 2016-04-29T22:18:46+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMxODM3XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIxODM3XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.J6b1zVsY7cbG_1vrqt2qQl1q4wcpc-fqMnRA7Cli6V0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000458s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005270s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004342s ]
+
+[ 2016-04-29T22:21:58+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000345s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004759s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000433s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005961s ]
+
+[ 2016-04-29T22:21:59+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003478s ]
+
+[ 2016-04-29T22:22:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyMTU5XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyMTU5XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.RlY4cQOqlPhHMuLGtTO4QQKOjp-FPbXCFbbvmXUh5YM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003624s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003558s ]
+
+[ 2016-04-29T22:22:02+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyMTU5XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyMTU5XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.RlY4cQOqlPhHMuLGtTO4QQKOjp-FPbXCFbbvmXUh5YM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005452s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006060s ]
+
+[ 2016-04-29T22:26:45+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000420s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004919s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000728s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005624s ]
+
+[ 2016-04-29T22:26:45+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000740s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005265s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005512s ]
+
+[ 2016-04-29T22:26:48+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyNjQ1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyNjQ1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.TeL6syE-ZMfpT2ElXbQWzU5tlGeBQVH8QDIUujw12Fs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000368s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006605s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005451s ]
+
+[ 2016-04-29T22:26:49+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyNjQ1XCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyNjQ1XCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.TeL6syE-ZMfpT2ElXbQWzU5tlGeBQVH8QDIUujw12Fs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000387s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006740s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007214s ]
+
+[ 2016-04-29T22:29:40+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003564s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000537s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004098s ]
+
+[ 2016-04-29T22:29:40+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005602s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003356s ]
+
+[ 2016-04-29T22:29:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyOTQwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyOTQwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.R2V5-p6j1KYI9sj9s5g_qYk1UNzpM8AN1cr4Xdzq_Ek
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000659s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003428s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005849s ]
+
+[ 2016-04-29T22:29:44+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMyOTQwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIyOTQwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.R2V5-p6j1KYI9sj9s5g_qYk1UNzpM8AN1cr4Xdzq_Ek
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003699s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003755s ]
+
+[ 2016-04-29T22:32:20+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000354s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003958s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000464s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004218s ]
+
+[ 2016-04-29T22:32:20+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005736s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004633s ]
+
+[ 2016-04-29T22:32:25+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMzMjIwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIzMjIwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.gxs_f_zHXzc9NYWHvBHlM5eyXdEbd0KtpCiP9dS8mcU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003204s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003234s ]
+
+[ 2016-04-29T22:32:25+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMzMjIwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIzMjIwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.gxs_f_zHXzc9NYWHvBHlM5eyXdEbd0KtpCiP9dS8mcU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003048s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003822s ]
+
+[ 2016-04-29T22:32:46+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMzMjIwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIzMjIwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.gxs_f_zHXzc9NYWHvBHlM5eyXdEbd0KtpCiP9dS8mcU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005702s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005579s ]
+
+[ 2016-04-29T22:32:47+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjMzMjIwXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjIzMjIwXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.gxs_f_zHXzc9NYWHvBHlM5eyXdEbd0KtpCiP9dS8mcU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004091s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: import D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 100 行.
+NOTIC: [8] Undefined index: import D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 100 行.
+NOTIC: [2] file_get_contents(D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\Classes\PHPExcel\Shared\OLERead.php 第 85 行.
+NOTIC: [2] fopen(D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/): failed to open stream: No such file or directory D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Vendor\Classes\PHPExcel\Reader\Abstract.php 第 200 行.
+ERR: Could not open file D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/ for reading.
+
+[ 2016-04-29T22:47:11+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000381s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013719s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id= [ RunTime:0.000780s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select name,psw,authority,grade from phyman_user where id=
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037152s ]
+
+[ 2016-04-29T22:47:11+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004780s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select name,psw,authority,grade from phyman_user where id=201522040840 [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004779s ]
+
+[ 2016-04-29T22:47:14+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000376s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003645s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003252s ]
+
+[ 2016-04-29T22:47:14+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Noti/getList?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000396s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004144s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select id,title,date from phyman_article order by date desc [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004610s ]
+
+[ 2016-04-29T22:47:26+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000387s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009650s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009196s ]
+
+[ 2016-04-29T22:47:26+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000382s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005461s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-04-29T22:48:11+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006501s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013094s ]
+
+[ 2016-04-29T22:48:11+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002870s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003456s ]
+
+[ 2016-04-29T22:48:28+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026540s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.076930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.079490s ]
+
+[ 2016-04-29T22:49:08+08:00 ] 127.0.0.1 /PHYMAN/index.php/Home/Admin/impUser?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOlwicGh5bWFuXCIsXCJpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJleHBcIjpcIjIwMTYwNDI5MjM0NzExXCIsXCJpYXRcIjpcIjIwMTYwNDI5MjI0NzExXCIsXCJuYW1lXCI6XCJcXHU2Nzk3XFx1NWMwZlxcdTgyN2FcIixcInVpZFwiOlwiMjAxNTIyMDQwODQwXCIsXCJ2aWV3bGV2ZWxcIjpcIjFcIixcInBlcm1pc3Npb25cIjpcImFkbWluXCJ9Ig.2eXCDCIr85mbMZ4JQmSzPvWUXKfZPHgRA6kfx6wZXHc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004723s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 13 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: import D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 104 行.
+NOTIC: [8] Undefined index: import D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\AdminController.class.php 第 104 行.
+

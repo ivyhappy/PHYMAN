@@ -143,11 +143,6 @@ class AdminController extends AjaxController {
         if (!empty($_FILES)) {
             
             import('ORG.Net.UploadFile');
-            /* $config=array(
-                'allowExts'=>array('xlsx','xls'),
-                'savePath'=>'./Public/upload/',
-                'saveRule'=>'time',
-            ); */
            $upload = new \Think\Upload();
            $upload->exts = array('xlsx','xls');// 设置附件上传类型
            $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -160,16 +155,10 @@ class AdminController extends AjaxController {
             } else {
     
             }
-            /* 
-            printf($info);
-            die; */
             vendor("PHPExcel.PHPExcel");
             $file=$upload->rootPath.$info['file']['savename'];
             
-          /*   echo $file;
-            echo $info['savename'];
-            print_r($info);
-            die; */
+          
             $this:: uploadFile($file);
             
             }else
@@ -183,7 +172,7 @@ class AdminController extends AjaxController {
         
        //读取用户文件然后插入数据库 
    public function uploadFile($filetmpname){
-       echo $filetmpname;
+       
             Vendor('Classes.PHPExcel');
             $objPHPExcel = \PHPExcel_IOFactory::load($filetmpname);
             $arrExcel = $objPHPExcel->getSheet(0)->toArray();
@@ -207,7 +196,33 @@ class AdminController extends AjaxController {
                 $m->add($fields[$i]);
             }
         }
-    
+    public function addNotiFile(){
+        if (!empty($_FILES)) {
+        
+            import('ORG.Net.UploadFile');
+            /* $config=array(
+             'allowExts'=>array('xlsx','xls'),
+             'savePath'=>'./Public/upload/',
+             'saveRule'=>'time',
+            ); */
+            $upload = new \Think\Upload();
+            $upload->exts = array('xlsx','xls','doc','docx','ppt','pptx');// 设置附件上传类型
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->rootPath  =     'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
+            $upload->savePath  =     ''; // 设置附件上传（子）目录
+            $upload->saveName = 'time';//array('date', '');
+            $info   =   $upload->upload();
+            if(!$info) {// 上传错误提示错误信息
+                echo $upload->getError();
+            } else {
+        
+            }
+            $file=$upload->rootPath.$info['file']['savename'];
+        }else
+        {
+            echo "请选择上传的文件";
+        }
+    }
     public function newNoti(){
         //获取客户端发送的json
         $arr=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
@@ -219,7 +234,13 @@ class AdminController extends AjaxController {
        // $date=$arr->date;//创建文章的年月日时分秒
         //$tid=$arr->tid;//
         $bodyofhtml=$arr->content;//$arr->noti->content;//文章的内容（保存为html）
-        $grade="研一;研二;研三";//$arr->noti->viewlevel;//可查看该文章的年级
+        $grade=$arr->grade;//$arr->noti->viewlevel;//可查看该文章的年级
+    $filedir=$arr->filedir;
+    $grades="";
+    for($i=0;$i<count($grade);$i++){
+        $grades=$grades.$grade[$i].";";
+    
+    }
     
     
         //对时间进行处理；
@@ -232,14 +253,16 @@ class AdminController extends AjaxController {
         $sql="select uuid_short();";
         $res=$Model->query($sql);
         $id=$res[0]['uuid_short()'];
-        
-        $sql="insert into __PREFIX__article(id,title,uid,date,body,grade)
-        values ($id,'$title',$uid,'$datesql','$bodyofhtml','$grade')";
-        if($Model->execute($sql)){
-            $suc=1;
+        if($filedir!=""){
+            $sql="insert into __PREFIX__article(id,title,uid,date,body,grade,filedir) 
+            values ($id,'$title',$uid,'$datesql','$bodyofhtml','$grades','$filedir')";
+        }else {
+            $sql="insert into __PREFIX__article(id,title,uid,date,body,grade) 
+            values ($id,'$title',$uid,'$datesql','$bodyofhtml','$grades')";
         }
-        else
-            $suc=0;
+        $Model->query($sql);
+        echo $Model->getLastSql();
+        $suc=1;
         $datesql= date("Y-m-d",strtotime( $datesql));
         $jsonsend=array(
             "title"=>$title,

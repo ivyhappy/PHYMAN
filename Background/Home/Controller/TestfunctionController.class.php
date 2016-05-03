@@ -762,11 +762,7 @@ class TestfunctionController extends AjaxController {
         
         
     }
-    
-    
-    
-    
-   
+  
         public function testindex(){
             // $this->Getvotexls();
             $Articlelist=A('Articlelist');

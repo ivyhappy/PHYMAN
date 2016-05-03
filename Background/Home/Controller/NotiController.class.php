@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Common\Controller\AjaxController;
 use Think\Model;
 use Firebase\JWT\JWT;
+use Org\Net\Http;
 
 require './ThinkPHP/Library/Vendor/autoload.php';
 require './ThinkPHP/Library/Vendor/Classes/PHPExcel.php';
@@ -75,7 +76,7 @@ class NotiController extends AjaxController {
             );
         }else{
             //对提取的jwt数据进行进一次选取；
-            $sql="select id,title,body,date from ".__PREFIX__."article where id=".$art;
+            $sql="select id,title,body,date,filedir from ".__PREFIX__."article where id=".$art;
             
            /*  $sql="select id,title,body,date,grade from ".__PREFIX__."article where id=".$art;
          */
@@ -92,7 +93,8 @@ class NotiController extends AjaxController {
             $jsonsend=array(
                 'title'=>$res[0]['title'],
                 'content'=>$res[0]['body'],
-                'detail'=>$article
+                'detail'=>$article,
+                'filedir'=>$res[0]['filedir']
             );
         }
         $json=json_encode($jsonsend);
@@ -102,6 +104,50 @@ class NotiController extends AjaxController {
         
        
     
+    }
+    public function download(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $filename=$json->filedir;//设置文件上传路径
+        $content='';
+        $expire=180;
+       
+        if(is_file($filename)) {
+            $length = filesize($filename);
+            echo $length;
+            
+            
+        }else if(is_file(UPLOAD_PATH.$filename)) {
+            $filename = UPLOAD_PATH.$filename;
+            $length = filesize($filename);
+        }else if($content != '') {
+            $length = strlen($content);
+        }else {
+            
+            echo "no";
+        }
+		if(!empty($filename)) {
+		    $type=substr($filename, strrpos($filename, '.')+1);
+			
+			echo $type="application/msword";	
+		}else{
+			$type	=	"application/octet-stream";
+		}
+        //发送Http Header信息 开始下载
+        header("Pragma: public");
+        header("Cache-control: max-age=".$expire);
+        //header('Cache-Control: no-store, no-cache, must-revalidate');
+        header("Expires: " . gmdate("D, d M Y H:i:s",time()+$expire) . "GMT");
+        header("Last-Modified: " . gmdate("D, d M Y H:i:s",time()) . "GMT");
+        header("Content-Disposition: attachment; filename=".$filename);
+        header("Content-Length: ".$length);
+        header("Content-type: ".$type);
+        header('Content-Encoding: none');
+        header("Content-Transfer-Encoding: binary" );
+        if($content == '' ) {
+            readfile($filename);
+        }else {
+        	echo($content);
+        }
     }
     public function articlecheck($userid,$articleid){
         $Model=new Model();
