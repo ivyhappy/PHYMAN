@@ -106,14 +106,15 @@ class NotiController extends AjaxController {
     
     }
     public function download(){
-        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-        $filename=$json->filedir;//设置文件上传路径
+        $name=$_GET['id'];
+        $filename="D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/".$name;
+        //$filename="D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/1462288527.doc";//$json->filedir;//设置文件上传路径
         $content='';
         $expire=180;
+        
        
         if(is_file($filename)) {
             $length = filesize($filename);
-            echo $length;
             
             
         }else if(is_file(UPLOAD_PATH.$filename)) {
@@ -123,12 +124,21 @@ class NotiController extends AjaxController {
             $length = strlen($content);
         }else {
             
-            echo "no";
         }
 		if(!empty($filename)) {
 		    $type=substr($filename, strrpos($filename, '.')+1);
-			
-			echo $type="application/msword";	
+			if($type==".doc"||$type==".docx"){
+			    $type="application/msword";
+			}elseif($type==".xls"||$type==".xles"){
+			    $type="application/x-xls";
+			}
+			elseif ($type==".ppt"||$type==".pptx"){
+			    $type="application/x-ppt";
+			    
+			}elseif($type==".rar"||$type==".zip"){
+			     $type="application/x-zip-compressed";
+			    
+			}
 		}else{
 			$type	=	"application/octet-stream";
 		}
@@ -138,7 +148,7 @@ class NotiController extends AjaxController {
         //header('Cache-Control: no-store, no-cache, must-revalidate');
         header("Expires: " . gmdate("D, d M Y H:i:s",time()+$expire) . "GMT");
         header("Last-Modified: " . gmdate("D, d M Y H:i:s",time()) . "GMT");
-        header("Content-Disposition: attachment; filename=".$filename);
+        header("Content-Disposition: attachment; filename=".$name);
         header("Content-Length: ".$length);
         header("Content-type: ".$type);
         header('Content-Encoding: none');

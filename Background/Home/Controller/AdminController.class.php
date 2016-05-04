@@ -206,7 +206,7 @@ class AdminController extends AjaxController {
              'saveRule'=>'time',
             ); */
             $upload = new \Think\Upload();
-            $upload->exts = array('xlsx','xls','doc','docx','ppt','pptx');// 设置附件上传类型
+            $upload->exts = array('xlsx','xls','doc','docx','ppt','pptx','rar','zip');// 设置附件上传类型
             $upload->maxSize   =     3145728 ;// 设置附件上传大小
             $upload->rootPath  =     'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
             $upload->savePath  =     ''; // 设置附件上传（子）目录
@@ -218,6 +218,12 @@ class AdminController extends AjaxController {
         
             }
             $file=$upload->rootPath.$info['file']['savename'];
+            $jsonsend=array(
+                "filedir"=>$info['file']['savename']
+            );
+            
+            $json=json_encode($jsonsend);
+            echo $json;
         }else
         {
             echo "请选择上传的文件";
@@ -246,14 +252,15 @@ class AdminController extends AjaxController {
         //对时间进行处理；
        // $datetime= date("YmdHis",strtotime($date));//获取当前时间
     
-        $datesql= date("Y-m-d",strtotime('now'));//
+        $datesql= date("YmdHis",strtotime('now'));//
         $Model=new Model();
     
         //从数据库中获取一个整数型的uuid，并设置为文章的ID号
         $sql="select uuid_short();";
         $res=$Model->query($sql);
         $id=$res[0]['uuid_short()'];
-        if($filedir!=""){
+        
+        if($filedir!=""&$uid!=null){
             $sql="insert into __PREFIX__article(id,title,uid,date,body,grade,filedir) 
             values ($id,'$title',$uid,'$datesql','$bodyofhtml','$grades','$filedir')";
         }else {
