@@ -16,7 +16,6 @@ return array(
     define('__DIRNAME__','/PHYMAN/Background/Home/contents/'),
     define('__DIRART__',$_SERVER['DOCUMENT_ROOT'].__DIRNAME__),
     define('__PREFIX__',"phyman_"),
-    define('TMPL_PATH','./Background/Home/phyman-1/'),
     //关于路径问题：http://www.phpddt.com/php/get-path.html
     
     
