@@ -1,133 +1,183 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Common\Controller\AjaxController;
 use Think\Model;
 require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
-class VoteController extends Controller {
+class VoteController extends AjaxController {
     
     public function getList(){//获取文章列表
-          //获取客户端发送的json
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        }
-        $arr=$json;
-        $username=$arr->username;//用户名为学号，也是数据库中的ID
-        $page=$arr->page;//显示列表的第几页（为14位年月日时分秒）
-        $pagesize=$arr->pagesize;//显示列表时每一页显示几条
-        $title=$arr->title;//按照文章标题选取文章；
-        $uid=$arr->writer;//按照作者选取文章；
-        $time=date("Y-m-d H:i:s",strtotime($arr->time));
-        
-        $tid=$arr->tid;//按照文章的类型选取文章；
-        $grade=$arr->grade;//按照查看该文章的年级选取文章
-        
-        
-        $start=($page-1)*$pagesize;
-        $sqlplus="order by begdate desc LIMIT $start,$pagesize";
-        //对提取的jwt数据进行进一次选取；
-        $sqloftitle="select * from ".__PREFIX__."view_vote where title like \"%$title%\" ".$sqlplus;
-        $sqlofdate="select * from ".__PREFIX__."view_vote where endtime > $time and begtime <$time".$sqlplus;//注意此处需要将时间设置Y-m-d        
-        $sqlofuid="select * from  ".__PREFIX__."view_vote where name=\"$uid\"".$sqlplus;//此处的uid都是中文的utf-8(编辑和管理员的名字互相都不能一样)
-        $sqloftid="select * from  ".__PREFIX__."view_vote where type=\"$tid\"".$sqlplus;//此处的tid都是中文的utf-8(种类的名字互相也都不能一样)
-        $sqlofgrade="select * from ".__PREFIX__."view_vote where grade like \"$grade\"".$sqlplus;//此处的grade都是中文的utf-8(种类的名字互相也都不能一样)
-        $sql="select * from ".__PREFIX__."view_vote".$sqlplus;
-        //phyman_view_vote 是vote的视图，包含voteid，标题title，begtime,endtime,创建者名字，属于哪个种类（中文）信息
-        
-        //根据用户设置的条件筛选文章
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $id=$json->username;
+
         $Model=new Model();
-        if($title!=null)
-            $res= $Model->query($sqloftitle);
-        else if($time!=null){
-            $res=$Model->query($sqlofdate);
-        }else if($uid!=null){
-            $res= $Model->query($sqlofuid);
-        }else if($tid!=null){
-            $res= $Model->query($sqloftid);
-        }else if($grade!=null){
-            $res= $Model->query($sqlofgrade);
+        $sql="select grade,authority from ".__PREFIX__."user where id=".$id;
+        $res= $Model->query($sql);
+        $grade=$res[0]['grade'];
+        
+        $Model=new Model();
+        
+        $sqlplus="order by begtime desc";// LIMIT $start,$pagesize";
+        
+        if($res[0]['authority']=="admin"){
+            $sql="select id,title,begtime from ".__PREFIX__."vote ".$sqlplus;
         }else{
-            $res= $Model->query($sql);
+            $sql="select id,title,begtime from ".__PREFIX__."vote  where grade like\"%$grade%\" ".$sqlplus;
         }
+        
+        //phyman_view_vote 是vote的视图，包含voteid，标题title，begtime,endtime,创建者名字，属于哪个种类（中文）信息
+        //根据用户设置的条件筛选文章
+     
+        $res= $Model->query($sql);
         
         $resjson=json_encode($res);
         
         $jsonsend=array(
-            'username'=>$username,
+            'username'=>$id,
             'list'=>$resjson,
-            'jwt'=>$arr->jwt
+            'access_token'=>$json->access_token
         );
         $jsonsend=json_encode($jsonsend);
         echo $jsonsend;
 
     }
-    public function getVoteDetail(){
-       //获取客户端发送的json
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
-        }
+    public function deleteOne(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $id=$json->id;
+        $Model= new Model();
+        $sql= "delete from ".__PREFIX__."vote where id =".$id.";";
+        $Model->query($sql);
+        $sql= "delete from ".__PREFIX__."vote_options where vid =".$id.";";
+        $Model->query($sql);
+        $sql= "drop table ".__PREFIX__."vote_user".$id.";";
+        $Model->query($sql);
+    
+        $jsonsend=array(
+            "status"=>"ok"
+        );
+        $jsonsend=json_encode($jsonsend);
+        echo $jsonsend;
+    }
+    public function getVoteResult(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+       /*  if($json->access_token==null){
+            $log="无access_token";
+        }else{
+            $jwt=JWT::decode($jwt,$key,array('HS256'));
+            $timenow=date("YmdHis",strtotime('now'));
+            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
+                $log="超时或名称不对称";
+            }
+        } */
         
         $arr=$json;
-        $username = $arr->username;//用户名为学号，也是数据库中的ID
-        $vote = $arr->vote;//文章的id号
+        $vote = $arr->id;//文章的id号
         
-        $Model=new Model();
-        //判断用户是否已进行过投票
-        $sql="select choose from ".__PREFIX__."vote_user".$vote." where uid=".$username;
-        $res=$Model->query($sql);
-        if($res[0]['choose']){
+            $Model=new Model();
+            //判断用户是否已进行过投票
             $optofhtml=$this::getvoteres($vote);//返回投票结果
+        
+            $sql="select title,body from ".__PREFIX__."vote where id=".$vote;
+            $res=$Model->query($sql);
+            $title=$res[0]['title'];
+            $content=$res[0]['body'];
+        
+            $jsonsend=array(
+                'title'=>$title,
+                'content'=>$content,
+                'result'=>$optofhtml,
+                'jwt'=>$arr->jwt
+            );
+       
+        $jsonsend=json_encode($jsonsend);
+        echo $jsonsend;
+    }
+    public function getVoteDetail(){
+        
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $key="access_token";
+        $jwt=$json->access_token;
+        if($json->access_token==null){
+            $log="无access_token";
         }else{
-            $optofhtml=$this::getvotebody($vote);//返回投票页面
+            $jwt=JWT::decode($jwt,$key,array('HS256'));
+            $timenow=date("YmdHis",strtotime('now'));
+            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
+                $log="超时或名称不对称";
+            }
         }
         
-        if($optofhtml!=null){
-            $suc=1;
+       
+        $arr=$json;
+        $username = $arr->username;//用户名为学号，也是数据库中的ID
+        $vote = $arr->id;//文章的id号
+        
+        
+        if($vote==null){
+            $res=array(
+                "id"=>"",
+                "options"=>"",
+                "date"=>""
+            );
+            $options=json_encode($res);
+            $jsonsend=array(
+                'username'=>$username,
+                'log'=>"未读取到文章id",
+                'options'=>$options
+            );
+        }else{
+            $Model=new Model();
+            //判断用户是否已进行过投票
+            $sql="select choose from ".__PREFIX__."vote_user".$vote." where id=".$username;
+            $res=$Model->query($sql);
+            $choose=$res[0]['choose'];
+            $optofhtml=$this::getvotebody($vote);//返回投票页面
+            
+            
+            if($optofhtml!=null){
+                $suc=1;
+            }
+            else{
+                $suc=0;
+            }
+            $sql="select title,type,body from ".__PREFIX__."vote where id=".$vote;
+            $res=$Model->query($sql);
+            $title=$res[0]['title'];
+            $content=$res[0]['body']; 
+            
+            
+            $jsonsend=array(
+                'username'=>$username,
+                'suc'=>$suc,
+                'title'=>$title,
+                'type'=>$res[0]['type'],
+                'content'=>$content,
+                'choose'=>$choose,
+                'options'=>$optofhtml,
+                'jwt'=>$arr->jwt
+            );
         }
-        else{
-            $suc=0;
-        }
-        $jsonsend=array(
-            'username'=>$username,
-            'suc'=>$suc,
-            'choose'=>$res[0]['choose'],
-            'options'=>$optofhtml,
-            'jwt'=>$arr->jwt
-        );
         $jsonsend=json_encode($jsonsend);
         echo $jsonsend;
         
     }
     public function userVote(){
-        //获取客户端发送的json
-        $json=json_decode($_POST);
-        $key="access_token";
-        $jwt=JWT::decode($json->jwt, $key, array('HS256'));
-        
-        $timenow=date("YmdHis",strtotime('now'));
-        if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-            return  "";
+    $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $choose=$json->choose;
+        $count=count($choose);
+        $option='';
+        for($i=0;$i<$count;$i++){
+            $option=$option.$choose[$i]->id.";";
         }
-        
         $arr=$json;
         $username=$arr->username;//用户名为学号，也是数据库中的ID
         $voteid=$arr->id;//投票ID号（为14位年月日时分秒）
-        $option=$arr->option;//那几个选项按照;划分
-    
+ //       $option=$arr->option;//那几个选项按照;划分
         $Model=new Model();
-        $sql="update ".__PREFIX__."vote_user".$voteid."set option=".$option."where id=".$username;
+        $sql="update ".__PREFIX__."vote_user".$voteid." set options= '".$option."' where id=".$username;
         $Model->query($sql);
     
-        $sql="update  ".__PREFIX__."vote_user".$voteid."set choose=1 where id=".$username;;
+        $sql="update ".__PREFIX__."vote_user".$voteid." set choose=1 where id= ".$username;;
         $Model->query($sql);
          
         //投票结果
@@ -140,6 +190,7 @@ class VoteController extends Controller {
         $jsonsend=array(
             'username'=>$username,
             'suc'=>$suc,
+            'option'=>$option,
             'result'=>$result,
             'jwt'=>$arr->jwt
         );
@@ -151,12 +202,12 @@ class VoteController extends Controller {
     public function getvotebody($vote){
         $Model=new Model();
         //  $sql="select options from __PREFIX__view where id=".$vote;
-        $sql="select options from __PREFIX__vote where id=".$vote;
-    
+        //$sql="select options from __PREFIX__vote where id=".$vote;
+    $sql="select id,content from ".__PREFIX__."vote_options where vid=".$vote;
         //根据用户点击选取投票
         $res=$Model->query($sql);
-        $optofhtml=$res[0]['options'];
-        
+        //$optofhtml=$res[0]['options'];
+        $optofhtml=json_encode($res);
         return $optofhtml;
          
     
@@ -179,25 +230,27 @@ class VoteController extends Controller {
     
     //获取投票结果
     public function getvoteres($voteid){
+       // $voteid=1;
      $Model=new Model();
         $choose=0;
         //共有多少人投票
-        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid." where choose=1";
+        $sql="select count(*) from  ".__PREFIX__."vote_user".$voteid;
         $res=$Model->query($sql);
+        $sum=$res[0]['count(*)'];
         
         $resultofvote=Array(
-            'sum'=>$res[0]['count(*)'],
+            'sum'=>$sum,
             'options'=>Array(
         
             ),
         );
         
         //有这么多种选项
-        $sql="select count(*) from __PREFIX__vote_options where vid=".$voteid;
+        $sql="select count(*) from ".__PREFIX__."vote_options where vid=".$voteid;
         $res=$Model->query($sql);
         $count=$res[0]['count(*)'];
         
-        $sql="select id,content from __PREFIX__vote_options where vid=".$voteid;
+        $sql="select id,content from ".__PREFIX__."vote_options where vid=".$voteid;
         $res=$Model->query($sql);
         
         
@@ -206,12 +259,12 @@ class VoteController extends Controller {
             $id=$res[$i]['id'];
             $content=$res[$i]['content'];
         
-            $sql="select count(*) from __PREFIX__vote_user".$voteid." where options like \"%$id%\"";
+            $sql="select count(*) from ".__PREFIX__."vote_user".$voteid." where options like \"%$id%\"";
             $temp=$Model->query($sql);
             $num=$temp[0]['count(*)'];
             $s=array(
                 'opt'=>$id,
-                'conten'=>$content,
+                'content'=>$content,
                 'num'=>$num
             );
             array_push($resultofvote['options'],$s);

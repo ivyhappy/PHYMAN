@@ -1,13 +1,243 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Common\Controller\AjaxController;
 use Think\Model;
 require './ThinkPHP/Library/Vendor/autoload.php';
 use Firebase\JWT\JWT;
-
+use Think\Template\Driver\Mobile;
+require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
 
 import('Vendor.mail');
-class TestfunctionController extends Controller {
+class TestfunctionController extends AjaxController {
+    public function votetest(){
+        $grade=["大三", "研一"];
+        $grades="";
+        for($i=0;$i<count($grade);$i++){
+            $grades=$grades.$grade[$i].";";
+        
+        }
+        echo count($grade);
+        echo $grades;
+    }
+    public function scan(){
+       $sqlplus="order by id desc";
+    
+        $sql="select * from ".__PREFIX__."scans ".$sqlplus;
+        $Model=new Model();
+        $res= $Model->query($sql);
+        $resjson=json_encode($res);
+    
+        $jsonsend=array(
+            "list"=>$resjson,
+        );
+        $json=json_encode($jsonsend);
+        //echo $json;
+        echo $json;
+    }
+    public function Vote(){
+       
+        $option='3;';
+        
+        $username=201522040840;//$arr->username;//用户名为学号，也是数据库中的ID
+        $voteid="96537863713193988";//$arr->id;//投票ID号（为14位年月日时分秒）
+    
+        $Model=new Model();
+        $sql="update ".__PREFIX__."vote_user".$voteid." set options= ".$option." where id=".$username;
+        $Model->query($sql);
+    echo $sql;
+        $sql="update  ".__PREFIX__."vote_user".$voteid." set choose=1 where id=".$username;;
+        $Model->query($sql);
+         
+        //投票结果
+    }
+    public function stat(){
+       
+        $articleid="96561627280703503";//$json->id;
+    
+    
+        $Model=new Model();
+        $sql="select id,name,checken from ".__PREFIX__."artic
+            le_user".$articleid." where checken=1";
+        echo $sql;
+        $res=$Model->query($sql);
+        $read=$res;
+        $read=json_encode($read);
+    
+        $sql="select id,name,checken from ".__PREFIX__."article_user".$articleid." where checken=0";
+        $res=$Model->query($sql);
+        $unread=$res;
+        $unread=json_encode($unread);
+    
+    
+    
+        $jsonsend=array(
+            'unread'=>$unread,
+            'read'=>$read
+        );
+        $json=json_encode($jsonsend);
+        echo $json;
+    
+    
+    
+    }
+    public function newNoti(){
+        //获取客户端发送的json
+        $arr=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+    
+        $uid=111;//用户名为学号，也是数据库中的ID
+        //$id=$arr->id;//文章ID号（为14位年月日时分秒）
+        $title="123";//$arr->title;//$arr->noti->title;//文章标题
+        //$uid=$arr->username;//创建该文章的用户ID
+        // $date=$arr->date;//创建文章的年月日时分秒
+        //$tid=$arr->tid;//
+        $bodyofhtml="<p>111</p>";//$arr->content;//$arr->noti->content;//文章的内容（保存为html）
+        $grade="研一;研二;研三";//$arr->noti->viewlevel;//可查看该文章的年级
+    
+    
+        //对时间进行处理；
+        // $datetime= date("YmdHis",strtotime($date));//获取当前时间
+    
+        $datesql= date("Y-m-d",strtotime('now'));//
+        $Model=new Model();
+    
+        //从数据库中获取一个整数型的uuid，并设置为文章的ID号
+        $sql="select uuid_short();";
+        $res=$Model->query($sql);
+        $id=$res[0]['uuid_short()'];
+    
+        $sql="insert into __PREFIX__article(id,title,uid,date,body,grade)
+        values ($id,'$title',$uid,'$datesql','$bodyofhtml','$grade')";
+        if($Model->execute($sql)){
+            $suc=1;
+        }
+        else
+            $suc=0;
+        $datesql= date("Y-m-d",strtotime( $datesql));
+        $jsonsend=array(
+            "title"=>$title,
+            "date"=>$datesql,
+            "jwt"=>$json->jwt
+        );
+    
+        $json=json_encode($jsonsend);
+         
+        //向数据库中增加表
+        $this::insertNotiuser($id);
+        $config = array(
+            'from' => '123',
+            'to' => '',
+            'content' => $title,
+            'viewlevel' => '1',
+            'action' => '1');
+    
+        vendor("messagePush-master.Pusher");
+        vendor("messagePush-master.MessageBuilder");
+    
+        $result = \Pusher::push((new \MessageBuilder($config))->build());
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    public function insertNotiuser($articleid){
+    
+        $Model=new Model();
+        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id));";
+        // $sql="create table ".__PREFIX__."article_user".$articleid."(id bigint(12),name varchar(10),grade varchar(10),check int(2) default 0 not null,primary key (id));";
+        $Model->query($sql);
+        print_r($sql);
+        $sql="select grade from ".__PREFIX__."article where id=".$articleid;
+        $res=$Model->query($sql);
+        $grade=explode(";",$res[0]['grade']);
+        $count=count($grade)-1;
+        for($i=0;$i<$count;$i++){
+            $sql="insert into ".__PREFIX__."article_user".$articleid.
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+            $Model->query($sql);
+        }
+    }
+    
+    
+    public function testjwt111(){
+        $token=array(
+            "iss"=>"phyman",
+          
+            "viewlevel"=>"1",
+            "permission"=>"admin"
+        );
+        $key="access_token";
+        $jwt=JWT::encode($token, $key);
+        echo $jwt;
+       // print_r(JWT::decode($jwt, $key));
+    }
+    
+    /* public function newNoti(){
+        
+        $config = array(
+            'from' => '123',
+            'to' => '',
+            'content' => "111",
+            'viewlevel' =>"1",
+            'action' => '1');
+    
+        vendor("messagePush-master.Pusher");
+        vendor("messagePush-master.MessageBuilder");
+    
+        $result = \Pusher::push((new \MessageBuilder($config))->build());
+        print_r( $result);
+    
+    
+    
+    } */
+    
+    
+    public function update(){
+        
+        $tt=array (
+            "noti"=>array (
+                "title"=>"new noti2",
+                "content"=> "raw html data",
+                "viewlevel"=> "102"
+                 ),
+            "jwt"=>"232431wwewe"
+         );
+        $json=json_encode($tt);
+        print_r($json);
+        echo $json['noti'];
+        $json=json_decode($json);
+     //   print_r($json);
+       echo $json->noti->title;
+        die;
+        
+        $Model=new Model();
+     $hasid=true;
+        while($hasid){
+           for($i=0;$i<12;$i++){
+                if($i==0)
+                    $b[]=rand(3,9);
+                else
+                    $b[]=rand(0,9);
+                
+            }
+            $id=join("",$b);
+            $sql="select * from ".__PREFIX__."user where id=".$id;
+            $res=$Model->query($sql);
+            print_r($res);
+            if($res==null)
+                $hasid=false;
+        }
+        echo $id;
+        die;
+        $Model=new Model();
+        $sql="update " .__PREFIX__."user set authority='管理员' where authority=1";
+        $Model->query($sql);
+        $sql="update " .__PREFIX__."user set authority='学生' where authority=3";
+        $Model->query($sql);
+    }
     
     public function index(){
       /*   print_r($_POST);
@@ -29,7 +259,9 @@ class TestfunctionController extends Controller {
         );
         $json=json_encode($json);
 //       $this->assign('row',$json);
-       print_r($json);
+      //  $this->display("./Background/Home/phyman-1/modules/user/views/List.html");
+        print_r($json);
+       $this->display("./Background/Home/phyman-1/index.html");
         die;
         //printWriter.write($json);
         $this->ajaxReturn($json,'JSON');
@@ -530,11 +762,7 @@ class TestfunctionController extends Controller {
         
         
     }
-    
-    
-    
-    
-   
+  
         public function testindex(){
             // $this->Getvotexls();
             $Articlelist=A('Articlelist');

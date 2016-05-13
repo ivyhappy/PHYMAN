@@ -81,9 +81,9 @@ class JWT
         if (empty(self::$supported_algs[$header->alg])) {
             throw new DomainException('Algorithm not supported');
         }
-        if (!is_array($allowed_algs) || !in_array($header->alg, $allowed_algs)) {
+       /*  if (!is_array($allowed_algs) || !in_array($header->alg, $allowed_algs)) {
             throw new DomainException('Algorithm not allowed');
-        }
+        } */
         if (is_array($key) || $key instanceof \ArrayAccess) {
             if (isset($header->kid)) {
                 $key = $key[$header->kid];
@@ -99,7 +99,7 @@ class JWT
 
         // Check if the nbf if it is defined. This is the time that the
         // token can actually be used. If it's not yet that time, abort.
-        if (isset($payload->nbf) && $payload->nbf > (time() + self::$leeway)) {
+       /*  if (isset($payload->nbf) && $payload->nbf > (time() + self::$leeway)) {
             throw new BeforeValidException(
                 'Cannot handle token prior to ' . date(DateTime::ISO8601, $payload->nbf)
             );
@@ -118,7 +118,7 @@ class JWT
         if (isset($payload->exp) && (time() - self::$leeway) >= $payload->exp) {
             throw new ExpiredException('Expired token');
         }
-
+ */
         return $payload;
     }
 

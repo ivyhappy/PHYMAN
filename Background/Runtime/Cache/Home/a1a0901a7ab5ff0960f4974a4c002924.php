@@ -1,7 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
-
 <html lang="en">
-
    <head>
      <meta charset="utf-8">
      <meta name="description" content="">
@@ -12,8 +10,13 @@
      <link rel="stylesheet" href="./Background/Home/phyman-1/bower_components/angular-material/angular-material.css">
      <link rel="stylesheet" href="./Background/Home/phyman-1/assets/main.css">
 <link rel="stylesheet" href="./Background/Home/phyman-1/bower_components/ng-grid-2.0.12/ng-grid.css">
+
 <link rel="stylesheet" href="./Background/Home/phyman-1/modules/user/css/app.css">
-     
+  <link rel="stylesheet" href="./Background/Home/phyman-1/modules/noti/css/noti.css"> 
+   <link rel="stylesheet" href="./Background/Home/phyman-1/modules/vote/css/vote.css">
+   <link rel="stylesheet" href="./Background/Home/phyman-1/modules/admin/css/Admin.css"> 
+    <link rel="stylesheet" href="./Background/Home/phyman-1/modules/detail/css/detail.css">
+        
      <link rel="stylesheet" href="./Background/Home/phyman-1/modules/user/css/app.css">
      <link rel="stylesheet" href="./Background/Home/phyman-1/modules/user/css/bootstrap.min.css">
      
@@ -29,12 +32,12 @@
     <md-toolbar class="md-theme-indigo" layout="row" layout-align="start center"
           ng-controller="toolbarCtrl">
       <md-button id="nav-button" class="md-icon-button" hide-gt-sm ng-click="toggleList()" aria-label="Menu">
-         <md-icon md-svg-src="./Background/Home/phyman-1/assets/images/ic_menu_48px.svg"></md-icon>
+         <md-icon md-svg-src="/PHYMAN/Background/Home/phyman-1/assets/images/ic_menu_48px.svg"></md-icon>
       </md-button>
       <span id="app-name" class="md-headline">PhyMan</span>
       <span flex></span>
       <md-button id="search-button" class="md-icon-button" ng-click="toggleAccount()" aria-label="Search">
-         <md-icon md-svg-src="./Background/Home/phyman-1/assets/images/ic_search_48px.svg"></md-icon>
+         <md-icon md-svg-src="/PHYMAN/Background/Home/phyman-1/assets/images/ic_search_48px.svg"></md-icon>
       </md-button>
       <md-menu>
         <md-button id="account-menu-button" class="md-icon-button" ng-click="$mdOpenMenu($event)" aria-label="Account">
@@ -42,10 +45,10 @@
         </md-button>
         <md-menu-content width="2">
           <md-menu-item>
-            <md-button ng-click="showLoginDlg()"><span md-menu-align-target>Login</span></md-button>
+            <md-button ng-click="showLoginDlg($event)"><span md-menu-align-target>Login</span></md-button>
           </md-menu-item>
           <md-menu-item>
-            <md-button ng-click="showRegisterDlg()"><span md-menu-align-target>Register</span></md-button>
+            <md-button ng-click="showRegisterDlg($event)"><span md-menu-align-target>Register</span></md-button>
           </md-menu-item>
         </md-menu-content>
       </md-menu>
@@ -65,27 +68,53 @@
           </md-list>
         </md-sidenav>
       </nav>
-      <section id="content" ui-view></section>
+	<section id="content" ui-view layout="column" layout-fill></section>
     </div>
 
-       <script src="./Background/Home/phyman-1/bower_components/jquery-1.9.1.js"></script>
-
+      <script src="/PHYMAN/Background/Home/phyman-1/bower_components/jquery-1.9.1.js"></script>
       <script src="./Background/Home/phyman-1/bower_components/angular/angular.js"></script>
-      <script src="./Background/Home/phyman-1/bower_components/angular-material/angular-material.js"></script>
+      <script src="./Background/Home/phyman-1/bower_components/angular/angular.min.js"></script>
+       <script src="./Background/Home/phyman-1/bower_components/angular-material/angular-material.js"></script>
       <script src="./Background/Home/phyman-1/bower_components/angular-aria/angular-aria.js"></script>
       <script src="./Background/Home/phyman-1/bower_components/angular-animate/angular-animate.js"></script>
       <script src="./Background/Home/phyman-1/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="./Background/Home/phyman-1/bower_components/angular-messages/angular-messages.js"></script>
-      <script src="./Background/Home/phyman-1/bower_components/angular-jwt/dist/angular-jwt.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/bower_components/angular-jwt/dist/angular-jwt.js"></script>
+	  <script src="/PHYMAN/Background/Home/phyman-1/bower_components/tinymce-dist/tinymce.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/bower_components/angular-ui-tinymce/dist/tinymce.min.js"></script>
 
-
-        <script src="./Background/Home/phyman-1/bower_components/ng-grid-2.0.12/ng-grid.debug.js"></script>
+      <script src="./Background/Home/phyman-1/bower_components/ng-grid-2.0.12/ng-grid.debug.js"></script>
+      
+      <script src="./Background/Home/phyman-1/bower_components/angular/angular.min.js"></script>
+	<!-- shim is needed to support non-HTML5 FormData browsers (IE8-9)-->
+	<script src="./Background/Home/phyman-1/bower_components/ng-file-upload/ng-file-upload-shim.min.js"></script>
+	<script src="./Background/Home/phyman-1/bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+      
 
       <script src="./Background/Home/phyman-1/modules/user/controller/user.js"></script>
-      <script src="./Background/Home/phyman-1/modules/user/route/user.js"></script>
+      <script src="./Background/Home/phyman-1/modules/noti/js/NotiController.js"></script>
+      <script src="./Background/Home/phyman-1/modules/vote/js/VoteController.js"></script>
+      <script src="./Background/Home/phyman-1/modules/qa/js/QaController.js"></script>   
+      <script src="./Background/Home/phyman-1/modules/admin/js/AdminController.js"></script>   
+               
+      <script src="/PHYMAN/Background/Home/phyman-1/modules/user/route/user.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/modules/noti/js/NotiRoute.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/modules/vote/js/VoteRoute.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/modules/qa/js/QaRoute.js"></script>
+      <script src="/PHYMAN/Background/Home/phyman-1/modules/admin/js/AdminRoute.js"></script>
+            
       <script src="./Background/Home/phyman-1/modules/user/service/AuthService.js"></script>
+      <script src="./Background/Home/phyman-1/modules/noti/js/NotiService.js"></script>
+      <script src="./Background/Home/phyman-1/modules/vote/js/VoteService.js"></script>
+      <script src="./Background/Home/phyman-1/modules/qa/js/QaService.js"></script>
+      <script src="./Background/Home/phyman-1/modules/admin/js/AdminService.js"></script>
+      
       <script src="./Background/Home/phyman-1/modules/user/service/AuthDialog.js"></script>
       <script src="./Background/Home/phyman-1/assets/app.js"></script>
+
+
+
+
    </body>
 
 </html>

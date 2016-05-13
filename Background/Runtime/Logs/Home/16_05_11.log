@@ -1,0 +1,306 @@
+[ 2016-05-11T13:44:15+08:00 ] ::1 /PHYMAN/index.php/Home/Testfunction/scan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009452s ]
+NOTIC: [2048] Declaration of Home\Controller\TestfunctionController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\TestfunctionController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect():  D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-05-11T13:44:38+08:00 ] ::1 /PHYMAN/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+ERR: 模板不存在:./Background/Home/View/./Background/Home/phyman-1/index.html.html
+
+[ 2016-05-11T19:21:33+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013559s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user 201522040840 [ RunTime:0.003404s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '201522040840' at line 1
+ [ SQL语句 ] : select grade from phyman_user 201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like  [ RunTime:0.002262s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like 
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029497s ]
+
+[ 2016-05-11T19:22:40+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022472s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user 201522040840 [ RunTime:0.002924s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '201522040840' at line 1
+ [ SQL语句 ] : select grade from phyman_user 201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like  [ RunTime:0.001778s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like 
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014873s ]
+
+[ 2016-05-11T19:24:19+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013221s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user 201522040840 [ RunTime:0.001771s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '201522040840' at line 1
+ [ SQL语句 ] : select grade from phyman_user 201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.001879s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014220s ]
+
+[ 2016-05-11T19:24:33+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062514s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user 201522040840 [ RunTime:0.001926s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '201522040840' at line 1
+ [ SQL语句 ] : select grade from phyman_user 201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.002025s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019711s ]
+
+[ 2016-05-11T19:24:34+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016605s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user 201522040840 [ RunTime:0.001667s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '201522040840' at line 1
+ [ SQL语句 ] : select grade from phyman_user 201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.002215s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014582s ]
+
+[ 2016-05-11T19:24:52+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000974s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016957s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where username=201522040840 [ RunTime:0.001874s ]
+ERR: 1054:Unknown column 'username' in 'where clause'
+ [ SQL语句 ] : select grade from phyman_user where username=201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.002124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014784s ]
+
+[ 2016-05-11T19:24:54+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.097368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.049662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062234s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where username=201522040840 [ RunTime:0.002260s ]
+ERR: 1054:Unknown column 'username' in 'where clause'
+ [ SQL语句 ] : select grade from phyman_user where username=201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.002054s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014897s ]
+
+[ 2016-05-11T19:24:57+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.014576s ]
+INFO: [ app_init ] --END-- [ RunTime:0.074306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042628s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where username=201522040840 [ RunTime:0.002205s ]
+ERR: 1054:Unknown column 'username' in 'where clause'
+ [ SQL语句 ] : select grade from phyman_user where username=201522040840
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%%"; [ RunTime:0.003272s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017703s ]
+
+[ 2016-05-11T19:25:07+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001287s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034358s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where id=201522040840 [ RunTime:0.035368s ]
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%研一%"; [ RunTime:0.009795s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%研一%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%研一%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016606s ]
+
+[ 2016-05-11T19:26:07+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002517s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019818s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where id=201522040840 [ RunTime:0.002668s ]
+SQL: select id,title,begtime from phyman_vote order by begtime desc where grade like"%研一%"; [ RunTime:0.001867s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where grade like"%研一%"' at line 1
+ [ SQL语句 ] : select id,title,begtime from phyman_vote order by begtime desc where grade like"%研一%";
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022369s ]
+
+[ 2016-05-11T19:27:04+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002453s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where id=201522040840 [ RunTime:0.000630s ]
+SQL: select id,title,begtime from phyman_vote  where grade like"%研一%" order by begtime desc [ RunTime:0.066365s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2016-05-11T19:27:36+08:00 ] ::1 /PHYMAN/index.php/Home/Vote/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001533s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024099s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where id=201522040840 [ RunTime:0.002368s ]
+SQL: select id,title,begtime from phyman_vote  where grade like"%研一%" order by begtime desc [ RunTime:0.002578s ]
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 47 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: arr D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+NOTIC: [8] Trying to get property of non-object D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\VoteController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015476s ]
+
+[ 2016-05-11T19:30:08+08:00 ] ::1 /PHYMAN/index.php/Home/Noit/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001378s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019036s ]
+ERR: 无法加载控制器:Noit
+
+[ 2016-05-11T19:30:13+08:00 ] ::1 /PHYMAN/index.php/Home/Noti/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030183s ]
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Writer - assumed 'Writer' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Excel5 - assumed 'Excel5' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant Vendor - assumed 'Vendor' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant Classes - assumed 'Classes' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant IOFactory - assumed 'IOFactory' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\Coding\xampp\htdocs\dashboard\PHYMAN\Background\Home\Controller\NotiController.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Coding\xampp\htdocs\dashboard\PHYMAN\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select grade from phyman_user where id=201522040840 [ RunTime:0.034082s ]
+SQL: select id,title,date from phyman_article   where grade like"%研一%" order by date desc [ RunTime:0.014522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019148s ]
+
