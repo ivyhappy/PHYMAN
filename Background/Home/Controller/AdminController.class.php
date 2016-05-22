@@ -16,15 +16,19 @@ class AdminController extends AjaxController {
     
     public function getScanList(){
         $sqlplus="order by id desc";
-    
-        $sql="select * from ".__PREFIX__."scans ".$sqlplus;
+        
         $Model=new Model();
+        
+        $sql="select * from ".__PREFIX__."scans  ".$sqlplus.";";
         $res= $Model->query($sql);
-        $resjson=json_encode($res);
+        $list=json_encode($res);
+      
+        
+        
     
         $jsonsend=array(
-           
-            "list"=>$resjson,
+         
+            "list"=>$list
         );
         $json=json_encode($jsonsend);
         //echo $json;
@@ -275,11 +279,15 @@ class AdminController extends AjaxController {
             "date"=>$datesql,
             "jwt"=>$json->jwt
         );
-    
+      
         $json=json_encode($jsonsend);
        
         //向数据库中增加表
-        $this::insertNotiuser($id);
+        if($grades=="毕业生;"){
+        
+        }else{
+            $this::insertNotiuser($id);
+        }
         $config = array(
             'from' => '123',
             'to' => '',
@@ -328,19 +336,28 @@ class AdminController extends AjaxController {
         
     }
     public function insertNotiuser($articleid){
-        
         $Model=new Model();
-        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id));";
-        $Model->query($sql);
-        $sql="select grade from ".__PREFIX__."article where id=".$articleid;
+        $sql="select count(*) from ".__PREFIX__."article where id=".$articleid;
         $res=$Model->query($sql);
-        $grade=explode(";",$res[0]['grade']);
-        $count=count($grade)-1;
-        for($i=0;$i<$count;$i++){
-            $sql="insert into ".__PREFIX__."article_user".$articleid.
-            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+        print_r($res);
+        if($res[0]['count(*)']=='1'){
+            $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id));";
             $Model->query($sql);
+            $sql="select grade from ".__PREFIX__."article where id=".$articleid;
+            $res=$Model->query($sql);
+            $grade=explode(";",$res[0]['grade']);
+            $count=count($grade)-1;
+            for($i=0;$i<$count;$i++){
+                if($grade[$i]=="毕业生"){
+                
+                }else{
+                    $sql="insert into ".__PREFIX__."article_user".$articleid.
+                     "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+                     $Model->query($sql);
+                }
+            }
         }
+        
     }
     public function newVote(){
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
@@ -418,25 +435,41 @@ class AdminController extends AjaxController {
     
         $jsonsend=json_encode($jsonsend);
         echo $jsonsend;
-    
+       
         $this::insertVoteuser($id);
+      
          
     }
     public function insertVoteuser($voteid){
         $Model=new Model();
-        $sql="create table ".__PREFIX__."vote_user".$voteid." (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,options varchar(255),primary key (id)) ;";
-        $Model->query($sql);
-    
-       // $sql="select grade from ".__PREFIX__."vote where id=".$voteid;
-    
-        //$res=$Model->query($sql);
-        //$grade=explode(";",$res[0]['grade']);
-      //  $count=count($grade)-1;
-      //  for($i=0;$i<$count;$i++){
-            $sql="insert into ".__PREFIX__."vote_user".$voteid.
-            "(id,name,grade) select id,name,grade from ".__PREFIX__."user";// where grade like\"%$grade[$i]%\";
+        
+        $sql="select count(*) from ".__PREFIX__."vote where id=".$voteid;
+        $res=$Model->query($sql);
+        print_r($res);
+        if($res[0]['count(*)']=='1'){
+        
+            $sql="create table ".__PREFIX__."vote_user".$voteid." (id bigint(12),name varchar(10),grade varchar(10),choose int(2) default 0 not null,options varchar(255),primary key (id)) ;";
             $Model->query($sql);
-        //}
+            
+            
+            
+            $sql="select grade from ".__PREFIX__."vote where id=".$voteid;
+            $res=$Model->query($sql);
+            $grade=explode(";",$res[0]['grade']);
+            $count=count($grade)-1;
+            for($i=0;$i<$count;$i++){
+                    $sql="insert into ".__PREFIX__."vote_user".$voteid.
+                  "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+                    $Model->query($sql);
+            }
+            
+            
+            
+    
+           /*  $sql="insert into ".__PREFIX__."vote_user".$voteid.
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user";// where grade like\"%$grade[$i]%\";
+            $Model->query($sql); */
+        }
     }
     
     

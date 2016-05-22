@@ -60,15 +60,7 @@ class VoteController extends AjaxController {
     }
     public function getVoteResult(){
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-       /*  if($json->access_token==null){
-            $log="无access_token";
-        }else{
-            $jwt=JWT::decode($jwt,$key,array('HS256'));
-            $timenow=date("YmdHis",strtotime('now'));
-            if(!($jwt->aud==$json->username&&$timenow<$jwt->exp&&$timenow>$jwt->iat)){
-                $log="超时或名称不对称";
-            }
-        } */
+      
         
         $arr=$json;
         $vote = $arr->id;//文章的id号
@@ -203,7 +195,7 @@ class VoteController extends AjaxController {
         $Model=new Model();
         //  $sql="select options from __PREFIX__view where id=".$vote;
         //$sql="select options from __PREFIX__vote where id=".$vote;
-    $sql="select id,content from ".__PREFIX__."vote_options where vid=".$vote;
+        $sql="select id,content from ".__PREFIX__."vote_options where vid=".$vote;
         //根据用户点击选取投票
         $res=$Model->query($sql);
         //$optofhtml=$res[0]['options'];

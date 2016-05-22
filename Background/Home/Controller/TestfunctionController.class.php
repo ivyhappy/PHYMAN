@@ -9,6 +9,43 @@ require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
 
 import('Vendor.mail');
 class TestfunctionController extends AjaxController {
+    public function insertuser1(){
+        $articleid="123456789";
+        $Model=new Model();
+        
+        
+        
+        
+        $sql="select count(*) from ".__PREFIX__."article where id=".$articleid;
+        $res=$Model->query($sql);
+        print_r($res);
+        if($res[0]['count(*)']!='0'){
+            echo "111";
+                
+            print_r($res);
+        }
+        else print_r( $res);
+        die;
+    
+        $sql="create table ".__PREFIX__."article_user".$articleid." (id bigint(12),name varchar(10),grade varchar(10),checken int(2) default 0 not null,primary key (id));";
+        $Model->query($sql);
+        $sql="select grade from ".__PREFIX__."article where id=".$articleid;
+        $res=$Model->query($sql);
+        $grade=explode(";",$res[0]['grade']);
+        $count=count($grade)-1;
+        for($i=0;$i<$count;$i++){
+            $sql="insert into ".__PREFIX__."article_user".$articleid.
+            "(id,name,grade) select id,name,grade from ".__PREFIX__."user where grade like\"%$grade[$i]%\";";
+            $Model->query($sql);
+        }
+    }
+    public function addscan(){
+        $Model=new Model();
+        $sql="update ".__PREFIX__."scan ,".__PREFIX__."user set ".__PREFIX__."scan.grade = ".__PREFIX__."user.grade where id=userid ;";
+        $Model->query($sql);
+        echo $sql;
+        
+    }
     public function votetest(){
         $grade=["大三", "研一"];
         $grades="";
