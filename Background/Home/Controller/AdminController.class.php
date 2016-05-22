@@ -13,6 +13,25 @@ import(Vendor.Classes.Writer.Excel5.php);
 import(Vendor.Classes.IOFactory.php);
 
 class AdminController extends AjaxController {
+    public function reset_email(){
+        //获取客户端发送的json
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        $id=$json->username;
+        $email=$json->new_email;
+    
+        $Model=new Model();
+        $sql="update ".__PREFIX__."user set mailbox='$email' where id=".$id.";";
+        $Model->query($sql);
+         
+         
+        $jsonsend = array(
+    
+            "uid" => $id,
+        );
+        $jsonsend=json_encode($jsonsend);
+        echo $jsonsend;
+    
+    }
     
     public function getScanList(){
         $sqlplus="order by id desc";
