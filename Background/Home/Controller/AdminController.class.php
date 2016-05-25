@@ -170,7 +170,7 @@ class AdminController extends AjaxController {
            $upload = new \Think\Upload();
            $upload->exts = array('xlsx','xls');// 设置附件上传类型
            $upload->maxSize   =     3145728 ;// 设置附件上传大小
-           $upload->rootPath  =     'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
+           $upload->rootPath  =   __DIRART__ ; //  'C:/xampp/htdocs/PHYMAN/Background/Home/contents/';//'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
            $upload->savePath  =     ''; // 设置附件上传（子）目录
            $upload->saveName = 'time';//array('date', '');
            $info   =   $upload->upload();
@@ -232,7 +232,8 @@ class AdminController extends AjaxController {
             $upload = new \Think\Upload();
             $upload->exts = array('xlsx','xls','doc','docx','ppt','pptx','rar','zip','pdf');// 设置附件上传类型
             $upload->maxSize   =     3145728 ;// 设置附件上传大小
-            $upload->rootPath  =     'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'; // 设置附件上传根目录
+            $upload->rootPath  =   __DIRART__ ; // 'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/';//
+           // 设置附件上传根目录'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/'
             $upload->savePath  =     ''; // 设置附件上传（子）目录
             $upload->saveName = 'time';//array('date', '');
             $info   =   $upload->upload();

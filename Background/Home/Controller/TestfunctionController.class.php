@@ -10,6 +10,8 @@ require './ThinkPHP/Library/Vendor/Classes/messagePush-master/Pusher.php';
 import('Vendor.mail');
 class TestfunctionController extends AjaxController {
     public function insertuser1(){
+        echo __DIRART__."111".__DIRART__;
+        die;
         $articleid="123456789";
         $Model=new Model();
         

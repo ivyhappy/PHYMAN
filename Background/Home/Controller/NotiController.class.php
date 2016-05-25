@@ -46,17 +46,20 @@ class NotiController extends AjaxController {
     }
    
     public function deleteOne(){
+        $dir=__DIRART__ ; //'C:/xampp/htdocs/PHYMAN/Background/Home/contents/';//;//'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/';//'D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/';
+        
         $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
         $id=$json->id;
         $Model= new Model();
+        $sql="select filedir from ".__PREFIX__."article where id=".$id.";";
+        $res=$Model->query($sql);
+        $dir=$dir.$res[0]['filedir'];
+        unlink($dir);
         $sql= "delete from ".__PREFIX__."article where id =".$id.";";
         $Model->query($sql);
-        echo $sql;
         $sql= "drop table ".__PREFIX__."article_user".$id.";";
         $Model->query($sql);
-    
-        echo $sql;
-    
+        
         $jsonsend=array(
             "status"=>"ok"
         );
@@ -118,7 +121,7 @@ class NotiController extends AjaxController {
     }
     public function download(){
         $name=$_GET['id'];
-        $filename="D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/".$name;
+        $filename=__DIRART__.$name;
         //$filename="D:/Coding/xampp/htdocs/dashboard/PHYMAN/Background/Home/contents/1462288527.doc";//$json->filedir;//设置文件上传路径
         $content='';
         $expire=180;
