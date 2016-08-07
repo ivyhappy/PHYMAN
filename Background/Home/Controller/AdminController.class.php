@@ -63,7 +63,7 @@ class AdminController extends AjaxController {
         $res= $Model->query($sql);
         $count=$res[0]['count']-1;
         $scanname="0";
-        $sql="select scanname from ".__PREFIX__."scan where userid =".$username." and scanid != 0";
+        $sql="select scanid,scanname from ".__PREFIX__."scan where userid =".$username." and scanid != 0";
         
         //$sql="select scanname from ".__PREFIX__."scan where userid =".$username;
         $res= $Model->query($sql);
@@ -77,6 +77,27 @@ class AdminController extends AjaxController {
         );
         $json=json_encode($jsonsend);
         echo $json;
+    }
+    public function detailscan(){
+        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+        
+        $Model= new Model();
+         
+        $id=$json->id;
+        $items=$json->deletes;
+        $count=count($items);
+         
+                
+        for($i=0;$i<$count;$i++){
+            $scanid=$items[$i]->scanid;
+            $scanname=$items[$i]->scanname;
+           // $sql= "delete from ".__PREFIX__."qa where id =".$id.";";
+            $sql="delete  from ".__PREFIX__."scan where userid = ".$id." and scanid =".$scanid.";";
+           // $sql="insert into ".__PREFIX__."scan (userid,username,scanid,scanname) values ($userid,'$username',$scanid,'$title');";
+            $Model->query($sql);
+            /* 
+            echo $Model->getLastSql(); */
+        }
     }
    public function updatescan(){
        $json=json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
